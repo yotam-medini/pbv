@@ -1,0 +1,102 @@
+\documentclass[
+  spinewidth=0.8325in,
+  coverwidth=6in,
+  coverheight=9in,
+  marklength=0.125in,
+  bleedwidth=0.125in,
+  11pt
+]{bookcover}
+
+\usepackage{lipsum}
+
+\newbookcovercomponenttype{center rotate}{
+    \parbox[t][\partheight][c]{\partwidth}{
+        \begin{center}
+             \rotatebox[origin=c]{-90}{#1}
+        \end{center}}}
+
+\definecolor{paleblue}{RGB}{175,238,238}
+\definecolor{darkblue}{RGB}{0,0,139}
+\definecolor{darkerblue}{RGB}{0,0,40}
+
+\begin{document}
+\begin{bookcover}
+
+\bookcovercomponent{color}{bg whole}{color=paleblue}
+
+% Text on the front cover
+\bookcovercomponent{normal}{front}{
+    \centering
+    \vspace{60mm}
+    \color{black}
+    {\sffamily\bfseries \resizebox*{50mm}{8mm}{Yael Medini}}
+    \par\vspace{20mm}
+    %\resizebox*{90mm}{40mm}{\parbox{35mm}{\centering Pale Blue Valley}}
+    % {\bfseries\fontsize{40}{44}\selectfont  Pale Blue Valley}
+    \resizebox*{100mm}{14mm}{\bfseries Pale Blue Valley}
+}
+
+% Text on the spine
+\bookcovercomponent{center rotate}{spine}{%
+    \color{black}\huge\sffamily\bfseries%
+    Yael Medini \hspace{1in} \Huge Pale Blue Valley}
+
+\bookcovercomponent{normal}{back}{
+    \vspace{0.6in}
+    \centering
+    \parbox{.8\textwidth}{\color{darkerblue}
+\normalsize
+Pale Blue Valley is the story of a love-triangle in no specific place
+or time, involving a woman and two men. The narrative unfolds against
+a background of political unrest between a dominant ruling entity and
+a resentful minority called Balad who once lived in a place known as
+Pale Blue Valley.  This unrest finds expression in acts of terror
+organized by the minority, which in turn provoke harsh military
+repression.
+
+Aera -- the young woman in the triangle -- is married to Yamik. The
+couple are Balads, and Yamik is a member of his people's underground
+Freedom Fighters. Glin, the other young man in the triangle, is
+totally immersed in the world of music, belongs with the prevailing
+dominant entity.
+
+A secret love affair springs up between Aera and Glin.
+
+Glin and Yamik happen to make each other's acquaintance, neither
+having an inkling of Aera's connection with the other.
+
+Aera is torn between the two. Her inner struggle is exacerbated when
+the men's acquaintanceship turns into a warm friendship. Through his
+friendship with Yamik Glin is drawn into and excited by the elevated
+ideals of the Balads; they remind him of the wonders of music. He is
+ready to join Yamik in his terrorist activities.
+
+Aera gives birth to a baby whose paternity is unclear. Each of the men
+believes the child to be his.
+
+The unrelenting political conflict between the two entities culminates
+in a major terror event, causing over a hundred deaths. The three
+protagonists of the ``triangle'' are among them. One of its only two
+survivors is Aera's baby. No one comes to claim him nor wants to adopt
+him since he is thought to be of Balad ethnicity. In time he is
+adopted by an elderly couple~belonging to the ruling entity.
+
+Aera's mother tracks down her baby grandson and comes to his adoptive
+home. Her offer to help with the housework there and be the baby's
+nanny is accepted.
+
+\bigskip
+
+She identifies herself as a Balad, but does not as yet reveal her
+blood tie with the baby.
+
+A period of political calm is expected. Who can tell for how long?
+And who knows what the future holds for the baby?
+    }
+
+
+}
+
+
+\end{bookcover}
+\end{document}
