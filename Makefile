@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+.DELETE_ON_ERROR:
+
 pbv.pdf: pbv.tex
 	pdflatex pbv.tex
 
