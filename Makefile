@@ -7,3 +7,6 @@ pbv.pdf: pbv.tex
 
 cover.pdf: cover.tex
 	pdflatex cover.tex
+
+pbv-draft.pdf: pbv.tex pbv-draft.tex
+	pdflatex '\def\ymdhms{}\input{pbv-draft}'

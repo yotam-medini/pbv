@@ -12,6 +12,8 @@
   left=0.6in, right=0.3in,
   top=0.6in, bottom=0.6in}
 
+\usepackage{datetime}
+
 \renewcommand{\chaptername}{} %% remove the word \chapter
 
 \title{Pale Blue Valley}
@@ -51,6 +53,10 @@ October 2019 \\
 \texttt{yael.medini@gmail.com}
 }
 
+\ifdefined\ymdhms
+ \bigskip
+ \textbf{Draft:}  \today, \currenttime
+\fi
 
 \chapter{}
 
