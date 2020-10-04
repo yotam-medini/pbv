@@ -25,8 +25,8 @@ def qmatch(paragraph, lnb, lne):
                 ((w + 1 == len(paragraph) or (paragraph[w + 1] != qc))) and
                 (cbefore not in string.ascii_letters or
                  cafter not in string.ascii_letters) and
-                (not ((cbefore == 's') and (cafter == ' '))) and
-                (cbefore != '``')
+                (not ((cbefore == 's') and (cafter in (' ', '\n')))) and
+                (cbefore != '\\')
             ):
                 qsingle.append((w, qc))
             b = (w + 1 if w >= 0 else -1)
