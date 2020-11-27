@@ -1,98 +1,45 @@
 % This file was converted to LaTeX by Writer2LaTeX ver. 1.4
 % see http://writer2latex.sourceforge.net for more info
-\documentclass[letterpaper]{article}
-\usepackage[ascii]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[english]{babel}
-\usepackage{amsmath}
-\usepackage{amssymb,amsfonts,textcomp}
-\usepackage{color}
-\usepackage{array}
-\usepackage{supertabular}
-\usepackage{hhline}
-\usepackage{hyperref}
-\hypersetup{pdftex, colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue, pdftitle=, pdfauthor=, pdfsubject=, pdfkeywords=}
-\usepackage[pdftex]{graphicx}
-\makeatletter
-\newcommand\arraybslash{\let\\\@arraycr}
-\makeatother
-% Page layout (geometry)
-\setlength\voffset{-1in}
-\setlength\hoffset{-1in}
-\setlength\topmargin{2.54cm}
-\setlength\oddsidemargin{3.175cm}
-\setlength\textheight{20.32cm}
-\setlength\textwidth{15.240001cm}
-\setlength\footskip{1.27cm}
-\setlength\headheight{1.27cm}
-\setlength\headsep{0cm}
-% Footnote rule
-\setlength{\skip\footins}{1.2mm}
-\renewcommand\footnoterule{\vspace*{-0.2mm}\setlength\leftskip{0pt}\setlength\rightskip{0pt plus 1fil}\noindent\rule{0.25\columnwidth}{0.2mm}\vspace*{1mm}}
-% Pages styles
-\makeatletter
-\newcommand\ps@Standard{
-  \renewcommand\@oddhead{\thepage{}}
-  \renewcommand\@evenhead{\@oddhead}
-  \renewcommand\@oddfoot{[Warning: Draw object ignored]\ [5E2?][5DE?]' \thepage{}}
-  \renewcommand\@evenfoot{\@oddfoot}
-}
-\newcommand\ps@MasterPageii{
-  \renewcommand\@oddhead{\thepage{}}
-  \renewcommand\@evenhead{\@oddhead}
-  \renewcommand\@oddfoot{[Warning: Draw object ignored]\ [5E2?][5DE?]' \thepage{}}
-  \renewcommand\@evenfoot{\@oddfoot}
-}
-\makeatother
-\pagestyle{Standard}
-\setlength\tabcolsep{1mm}
-\renewcommand\arraystretch{1.3}
-\title{}
-\author{}
-\date{}
+%
+% And latex manual modificatin by Medini  yotam.medini@gmail.com
+\documentclass[twoside,11pt]{book}
+% \usepackage[ascii]{inputenc}
+% \usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{
+  paperwidth=6in,
+  paperheight=9in,
+  left=0.6in, right=0.3in,
+  top=0.6in, bottom=0.6in}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RO, LE] {\thepage}
+\fancyhead[RE, LO] {}
+\renewcommand{\headrulewidth}{0pt}
+
+\usepackage{datetime}
+
+\renewcommand{\chaptername}{} %% remove the word \chapter
+
+% \title{Pale Blue Valley}
+% \author{Yael Medini}
+% \date{2020-07-20}
 \begin{document}
-\clearpage\pagestyle{MasterPageii}
-
-\bigskip
 
 
-\bigskip
-
-
-\bigskip
-
-Pale Blue Valley - Yael Medini 
-
-=======================
-
+\thispagestyle{empty}
+% \maketitle
+{\nullfont dum}
+\vspace{.3\textheight}
 \begin{center}
-\tablefirsthead{}
-\tablehead{}
-\tabletail{}
-\tablelasttail{}
-\begin{supertabular}{m{15.0cm}m{-0.18942cm}m{-0.18942cm}m{-0.17883cm}}
-~
- &
-~
- &
-~
- &
- \includegraphics[width=0.02646cm,height=0.02646cm]{pbv001-img001.jpg} 
- \includegraphics[width=0.02646cm,height=0.02646cm]{pbv001-img001.jpg} \\
-\multicolumn{3}{m{15.02116cm}}{\begin{center}
-\begin{tabular}{l}
-
-~
-\\
-\end{tabular}
-\end{center}
-~
-} &
-\\
-\end{supertabular}
-\end{center}
+{\Huge \textbf{Pale Blue Valley}}
 
 \bigskip
+
+\textbf{\Large Yael Medini}
+\end{center}
+\vspace{.2\textheight}
 
 Sincere thanks to Mary Vaadia who was the first to go over my draft English translation of the Hebrew book
 {\textquotedbl}Balada La'teror{\textquotedbl} published in 2000 by G'vanim Publishing House.
@@ -106,7 +53,7 @@ words and uncluttered style contribute significantly to the novel's directness a
 
 \bigskip
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Last but not least I would like to note with deep~appreciation the
+{Last but not least I would like to note with deep~appreciation the
 readiness of my granddaughter Amalia Medini to look over scores of imperfect phrases and smooth them out}.
 
 
@@ -132,50 +79,50 @@ Ramat Gan, Israel.
 
 \bigskip
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Back cover of Pale Blue Valley}
+{Back cover of Pale Blue Valley}
 
 
 \bigskip
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Pale Blue Valley is the story of a love-triangle in no specific place
+{Pale Blue Valley is the story of a love-triangle in no specific place
 or time, involving a woman and two men. The narrative unfolds against a background of political unrest between a
 dominant ruling entity and a resentful minority called \ Balad who once lived in a place known as Pale Blue Valley.
 This unrest finds expression in acts of terror organized by the minority, which in turn provoke harsh military
 repression.}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Aera -- the young woman in the triangle -- is married to Yamik. The
+{Aera -- the young woman in the triangle -- is married to Yamik. The
 couple are Balads, and Yamik is a member of his people's underground Freedom Fighters. Glin, the\ other young man in
 the triangle, is totally immersed in the world of music, belongs with the prevailing dominant entity.\ \ }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{A secret love affair springs up between Aera and Glin.\ \ }
+{A secret love affair springs up between Aera and Glin.\ \ }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Glin and Yamik happen to make each other's acquaintance, neither
+{Glin and Yamik happen to make each other's acquaintance, neither
 having an inkling of Aera's connection with the other.}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Aera is torn between the two. Her inner struggle is exacerbated when
+{Aera is torn between the two. Her inner struggle is exacerbated when
 the men's acquaintanceship turns into a warm friendship. Through his friendship with Yamik \ Glin is drawn into and
 excited by the elevated ideals of the Balads; they remind him of the wonders of music. He is ready to join Yamik in his
 terrorist activities.}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Aera gives birth to a baby whose paternity is unclear. Each of the men
+{Aera gives birth to a baby whose paternity is unclear. Each of the men
 believes the child to be his.}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{The unrelenting political conflict between the two entities culminates
+{The unrelenting political conflict between the two entities culminates
 in~a major terror event,\ causing over a hundred\ deaths. The three protagonists of the
 {\textquotedbl}triangle{\textquotedbl} are among them. One of its only two survivors is Aera's baby. No one comes to
 claim him nor wants to adopt him\ since he is thought to be of Balad ethnicity. In time he is adopted by an elderly
 couple~belonging to the ruling entity. }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Aera's mother tracks down her baby grandson and comes to his adoptive
+{Aera's mother tracks down her baby grandson and comes to his adoptive
 home. Her offer to help with the housework there and be the baby's nanny is accepted. }
 
 
 \bigskip
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{She identifies herself as a Balad, but does not as yet reveal her
+{She identifies herself as a Balad, but does not as yet reveal her
 blood tie with the baby.}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{A period of political calm is expected. Who can tell for how
+{A period of political calm is expected. Who can tell for how
 long?\ \ And who knows what the future holds for the baby?}
 
 
@@ -194,148 +141,148 @@ Pale Blue Valley
 
 \bigskip
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{1}
+{1}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}'Here I go }again,
-my\ love,\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ saying that you haven't changed.\ Not one little
-bit}\textcolor{red}{. }\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Time after time I've\ said it. I'll say it
+`Here I go }again,
+my\ love,{ saying that you haven't changed.\ Not one little
+bit}. {Time after time I've\ said it. I'll say it
 till the end of days. Yes, Saffia\ Saffia, my~darling.\ First and last name the same. }They used to call you Double
-Saffia -\ make a joke of it.\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{\ No,
-you}\textit{\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{\ }}\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{haven't
-changed }at all,\ my dearest, which is something you\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{can't say about
-me -}\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{your
-}eternal\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{\ widow. I keep growing older. Older and older.
-}Today\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ you wouldn't recognize me. This is what happened to our
+Saffia -\ make a joke of it.{\ No,
+you}\textit{{\ }}{haven't
+changed }at all,\ my dearest, which is something you\ {can't say about
+me -}\ {your
+}eternal{\ widow. I keep growing older. Older and older.
+}Today{ you wouldn't recognize me. This is what happened to our
 severed~life.'}
 
 Rimat speaks these words voicelessly, gazing at the faded photo,\ then kissing it.
-It\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ doesn't
-do\ Saffia}\textcolor{red}{\ }\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{justice\ because Boni took it }just
+It{ doesn't
+do\ Saffia} {justice\ because Boni took it }just
 as\ he was getting up - face puffy, hair
-disheveled,\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{eyes
-unfocused. But this is the only photo that survived\ }the disaster\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{.
+disheveled,{\ }{eyes
+unfocused. But this is the only photo that survived\ }the disaster{.
 How close were those two brothers {}-- }{}``Big-Saff{}'' and {}``Li{}'l{}-Saff{\textquotedbl}. 
 
-S\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{he hangs onto the photo till she hears Glin's footsteps\ in the
-evening quiet. When }they get louder\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{it's time to return the photo
+S{he hangs onto the photo till she hears Glin's footsteps\ in the
+evening quiet. When }they get louder\ {it's time to return the photo
 to its hiding place under the old\ cradle's mattress. She tugs\ at a corner of
-the}\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }cloth lying on top of the
-mattress\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{\ looking for where she left off. The yellow flower is almost
-complete. How many more flowers will she need}\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{to complete the
-garland? Five, she\ }thinks\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{, maybe six. Afterwards she'll embroider
-another }ring,\ p\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{erhaps even a third.~
-}How\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ will this piece of embroidery
-end\ }up?\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{\ }A\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{
-table{}-cloth,} a\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{bedspread\ {}-\ who knows? She can't remember when
-she began working on\ }it,\ nor does she know if she'll\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ever finish
+the}{\ }cloth lying on top of the
+mattress{\ looking for where she left off. The yellow flower is almost
+complete. How many more flowers will she need}\ {to complete the
+garland? Five, she\ }thinks{, maybe six. Afterwards she'll embroider
+another }ring,\ p{erhaps even a third.~
+}How{ will this piece of embroidery
+end\ }up?{\ }A{
+table{}-cloth,} a\ {bedspread\ {}-\ who knows? She can't remember when
+she began working on\ }it,\ nor does she know if she'll\ {ever finish
 it. Who cares? }The days when she measured the passing of time by days, weeks, months, seasons, years, \ are long
 gone.\ 
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Outside Glin }mounts the
-stairs\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{two at a time and bursts into the room, Walkman dangling on
-his chest, earphones~}slung\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ around his neck. He lays a few discs on
+{Outside Glin }mounts the
+stairs\ {two at a time and bursts into the room, Walkman dangling on
+his chest, earphones~}slung{ around his neck. He lays a few discs on
 the table, swiftly crosses the room and opens the window.~ A women's lament drifts in from the rosy twilight.}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{\ {}``}Hi,\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{
+{\ {}``}Hi,{
 Glin,''\ says\ Rimat, {\textquotedbl}it's cold outside -{}''}
 
-{\textquotedbl}And if I\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ close the window {\dots}?{}''}
+{\textquotedbl}And if I{ close the window {\dots}?{}''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``No, it won't be warm outside -{}''}
+{{}``No, it won't be warm outside -{}''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``Ha-ha-ha!'' Glin }forces a
-laugh\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{. ``Hi, mom -{}''\ }
+{{}``Ha-ha-ha!'' Glin }forces a
+laugh{. ``Hi, mom -{}''\ }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``And while you're\ at it, }would you be good enough to switch on
-the light.\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{It's getting dark.{}''}
+{{}``And while you're\ at it, }would you be good enough to switch on
+the light.\ {It's getting dark.{}''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``One~at a time, if~you }don't
-mind\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{,'' says Glin. He closes the window and presses his face against
-the glass}.\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ ``Who are those
-}two\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{women singing out
+{{}``One~at a time, if~you }don't
+mind{,'' says Glin. He closes the window and presses his face against
+the glass}.{ ``Who are those
+}two{\ }{women singing out
 there?''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``The two Balad women, I
-}expect\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{,'' Rimat answers.}
+{{}``The two Balad women, I
+}expect{,'' Rimat answers.}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``What Balad women?''}
+{{}``What Balad women?''}
 
-{\textquotedbl}The ones who started working\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ in the
+{\textquotedbl}The ones who started working{ in the
 village.{\textquotedbl}\ \ \ \ \ \ \ \ }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{\textquotedbl}Come to think of it, I've never met a Balad -- man,
+{{\textquotedbl}Come to think of it, I've never met a Balad -- man,
 woman\ }or child.{\textquotedbl}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``They came looking for work. Jobs were arranged for them\ in the
-packing }shed\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{.''}
+{{}``They came looking for work. Jobs were arranged for them\ in the
+packing }shed{.''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``Gidal had a hand in it, no doubt -{}''}
+{{}``Gidal had a hand in it, no doubt -{}''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{~``}I expect
-so\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{,''~Rimat says.\ }
+{~``}I expect
+so{,''~Rimat says.\ }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``You
-don't~}expect,~mom\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{.~You know.{\textquotedbl} Glin regrets having said
+{{}``You
+don't~}expect,~mom{.~You know.{\textquotedbl} Glin regrets having said
 this because it annoyed his  mom, but it slipped from his tongue.
-{\textquotedbl}}D{}'y\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ou know them?''\ }
+{\textquotedbl}}D{}'y{ou know them?''\ }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``Only from afar.''}
+{{}``Only from afar.''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``So where are they heading~now?''}
+{{}``So where are they heading~now?''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``They live in that\ shack\ up the
-hill,\ }past\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ the bend.''}
+{{}``They live in that\ shack\ up the
+hill,\ }past{ the bend.''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``In that hovel?'' Glin turns }to his
-mom\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{.}
+{{}``In that hovel?'' Glin turns }to his
+mom{.}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Only now does Rimat notice~a new
-B}and-Aid\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{on his right temple. She doesn't ask about it. T}hat would
-only rub him the wrong way\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{. ``It's been fixed up,{}'' she emphasizes
+{Only now does Rimat notice~a new
+B}and-Aid\ {on his right temple. She doesn't ask about it. T}hat would
+only rub him the wrong way{. ``It's been fixed up,{}'' she emphasizes
 as she explains. }\ 
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{That too is\ Gidal's doing, Glin is certain. Not wishing to annoy\ his
-}mom\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ again he\ keeps quiet. She has a soft spot for Golden Hands. Let
-the\ }old\ boy\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{enjoy it.}\ 
+{That too is\ Gidal's doing, Glin is certain. Not wishing to annoy\ his
+}mom{ again he\ keeps quiet. She has a soft spot for Golden Hands. Let
+the\ }old\ boy\ {enjoy it.}\ 
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Rimat bends over the old cradle, her fingers searching for the
-}skein\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{of embroidery thread under the soft mound of cloth. She
-pulls\ }out\ some\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{white thread and examines it against the white
-cloth. ``Should I use white in the }empty\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{\ spaces? White on white?''}
+{Rimat bends over the old cradle, her fingers searching for the
+}skein\ {of embroidery thread under the soft mound of cloth. She
+pulls\ }out\ some\ {white thread and examines it against the white
+cloth. ``Should I use white in the }empty{\ spaces? White on white?''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``Void on void.{}'' Glin
-}turns\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ back to the window and opens it again. Meanwhile the twilight
+{{}``Void on void.{}'' Glin
+}turns{ back to the window and opens it again. Meanwhile the twilight
 has deepened and the gloomy melody filters in from~a distance. ``Mom,\ come see how beautiful they look against the
 sunset -{}''}\ 
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Rimat leaves\ off her embroidery, gets up with a sigh and goes over to
+{Rimat leaves\ off her embroidery, gets up with a sigh and goes over to
 the window. ``A picture postcard,'' she says. The singing momentarily gives way to a tinkle of silvery laughter. ``I
 think they're~mother and~daughter}. Would you mind shutting\ this window for the
-night?\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}''
-}Returning\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{to her armchair
-she turns on the light, }then trails her fingers\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{against the violin
-case on }top of\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{the
+night?{{}''
+}Returning{\ }{to her armchair
+she turns on the light, }then trails her fingers\ {against the violin
+case on }top of{\ }{the
 bookcase. She collects the fresh crop of flakes that the cover has recently shed and
-}puts\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ them in her pocket. Later on},~in the
-darkness,\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{she'll let them fall from her hands into the trash
-bin\ }outside\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{. She'll do it slowly, deliberately.~She eases herself
+}puts{ them in her pocket. Later on},~in the
+darkness,\ {she'll let them fall from her hands into the trash
+bin\ }outside{. She'll do it slowly, deliberately.~She eases herself
 back into her chair and threads her needle with red thread. Up and down, up and down }through the white calico\ she
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{plies her needle.\  ``If it
-isn't}\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{too much to
-ask,{\textquotedbl} she }turns to her son,\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{\textquotedbl}could you
-}draw the curtains close? The sun's going down.\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ You know I don't like
-to see the dark}\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{outside.''\ }
+{plies her needle.\  ``If it
+isn't}{\ }{too much to
+ask,{\textquotedbl} she }turns to her son,\ {{\textquotedbl}could you
+}draw the curtains close? The sun's going down.{ You know I don't like
+to see the dark}\ {outside.''\ }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Not only does Glin
-}ignore\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ her bidding, but he again turns off the light. ``The light
-inside~o}bscures\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{the dark outside,{}'' he says\ returning\ to the
+{Not only does Glin
+}ignore{ her bidding, but he again turns off the light. ``The light
+inside~o}bscures\ {the dark outside,{}'' he says\ returning\ to the
 window. ``Did you hear what I said? I
-repeat}\textcolor[rgb]{0.0,0.4392157,0.7529412}{:}\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{\ The light inside
-}obscures\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ the dark outside. You're not impressed by the symbolism
-resonating in these words. With all due respect, }dear mom,\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{you do
+repeat}{:}{\ The light inside
+}obscures{ the dark outside. You're not impressed by the symbolism
+resonating in these words. With all due respect, }dear mom,\ {you do
 lack poetic sensibility. My `void on void' }before\ also left you
-unimpressed.\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ Where are their men?
-}Making\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{~those bombs?''}
+unimpressed.{ Where are their men?
+}Making{~those bombs?''}
 
 Rimat's scissors slip from her knees\ to the floor with a loud clang. How can her son mention those horrific bombs so
 lightly? It's her own fault. She didn't do enough to make him\ hate the idea of bloodshed.
@@ -352,7 +299,7 @@ flippancy. He{}'s\ gone too far. Although he cannot truly grieve for a father he
 conscious of his mom{}'s everlasting\ mourning for her love -  victim of a heart attack\ {}- snatched from life at its
 most dynamic. He steals a glance at her. He{}'s already been forgiven.
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Rimat doesn't always understand her son's~humor. Saffia, too, used to
+{Rimat doesn't always understand her son's~humor. Saffia, too, used to
 say that a keen sense of humor wasn't exactly her forte. }He forgave her this deficiency just as he forgave her for
 others far worse. But she will never\ forgive his friends nor his brother Boni for having left~him to his tragic fate.
 Nor will she ever forgive herself.~ She should have trusted her gut and begged him not to leave the house carrying
@@ -360,93 +307,93 @@ those damned bombs. She should've shrieked to high heaven, laid herself\ on the 
 she'd~yielded to fatigue. Nursing Glin, pacing\ the floor\ with him those sleepless nights -\ she was exhausted. When
 the final hour comes,\ is this the way she'll\ close her eyes with anger still smoldering inside?\ A thought crosses
 her mind - maybe now is the time to learn from Saffia the art of forgiveness. If she can ever forgive his brother
-and\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ his friends, she might be able to forgive herself too. }
+and{ his friends, she might be able to forgive herself too. }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Glin asks, ``How long have they been working in the village?'' }
+{Glin asks, ``How long have they been working in the village?'' }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``Almost a week.'' }
+{{}``Almost a week.'' }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``It's the first time I've seen them here -{}'' }
+{{}``It's the first time I've seen them here -{}'' }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``}At first\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ they
+{{}``}At first{ they
 were told to use the new gate, but this morning they began opening the old gate for them.'' }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``Why}\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{the
+{{}``Why}{\ }{the
 change?'' }
 
 {}``You're a genius if you can't figure that out yourself. The new gate made them go a long way
-\textcolor{black}{round\ through }the village\ and that took\ time.\ \ Using\ this old gate makes it a short walk. And
+{round\ through }the village\ and that took\ time.\ \ Using\ this old gate makes it a short walk. And
 you have to remember that they are\ after all\ Balads. Not everybody{}'s happy about
-that.''\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{\ }
+that.''{\ }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}''Why\ do people care? Anyhow, is this
-}also\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{thanks
-to\ }Golden\ Hands\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{?''}
+{{}''Why\ do people care? Anyhow, is this
+}also\ {thanks
+to\ }Golden\ Hands{?''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{\textquotedbl}Probably.''}
+{{\textquotedbl}Probably.''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Suddenly something~from outside shatters the window and hits Glin on
+{Suddenly something~from outside shatters the window and hits Glin on
 the cheek.}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``Glin!'' Rimat rushes to her son and tries to stem the bleeding
+{{}``Glin!'' Rimat rushes to her son and tries to stem the bleeding
 with a handkerchief.\ }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``The daily gift,'' says Glin. ``If you hadn't
-insisted\ }that\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{I close the window, I would have gotten only a
-}little tap\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{.'' }
+{{}``The daily gift,'' says Glin. ``If you hadn't
+insisted\ }that\ {I close the window, I would have gotten only a
+}little tap{.'' }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``Press hard with }that
-handkerchief,\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}'' Rimat\ advises as she\ hurries to get
-a}\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }Band-Aid.
+{{}``Press hard with }that
+handkerchief,{{}'' Rimat\ advises as she\ hurries to get
+a}{\ }Band-Aid.
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Glin bends down to pick up the muddy
-}package\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ from the floor. Opening it he reads the attached note aloud:
+{Glin bends down to pick up the muddy
+}package{ from the floor. Opening it he reads the attached note aloud:
 ``'Every bullet has its address.'
-How\ }very\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{original.''}
+How\ }very{\ }{original.''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Rimat returns, dabs iodine on the cut and }applies the
-dressing\textcolor[rgb]{0.0,0.4392157,0.7529412}{. }
+{Rimat returns, dabs iodine on the cut and }applies the
+dressing{. }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Glin }{}-- his face now adorned with two strips
--\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{puts }a closed
-fist\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{to his mouth.\ }{}``Tarrum-tarrum-tarrum!{}'' he trumpets. ``On
-the one hand, mom,\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{\ this isn{}'t one of your annual springtime
-letters\ from your old friend that}\textcolor{red}{\ }\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{history
+{Glin }{}-- his face now adorned with two strips
+-{\ }{puts }a closed
+fist\ {to his mouth.\ }{}``Tarrum-tarrum-tarrum!{}'' he trumpets. ``On
+the one hand, mom,{\ this isn{}'t one of your annual springtime
+letters\ from your old friend that}{\ }{history
 professor. But on the other hand -{\textquotedbl}\ he pulls a folded scrap of paper from his pocket and hands it
-to\ }her,\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ ``it sure is interesting!{}'' }
+to\ }her,{ ``it sure is interesting!{}'' }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Rimat flattens the scrap of paper. ``Alir!'' she cries out.}
+{Rimat flattens the scrap of paper. ``Alir!'' she cries out.}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``Your old poet-friend, indeed -{}''}
+{{}``Your old poet-friend, indeed -{}''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``It's his picture from the old days,{}'' Rimat says. Scanning the
+{{}``It's his picture from the old days,{}'' Rimat says. Scanning the
 text underneath she purses her lips. ``Where did you find this?{}''\ }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``On the path coming home.{\textquotedbl}\ }
+{{}``On the path coming home.{\textquotedbl}\ }
 
 Those Balad women may have dropped it accidentally\ or maybe\ on purpose, Rimat thinks to
-herself\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{.\ }
+herself{.\ }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{\textquotedbl}Your stories about Alir made me imagine him as a
+{{\textquotedbl}Your stories about Alir made me imagine him as a
 saintly soul hovering up above,{\textquotedbl} Glin continues,\ {\textquotedbl}and here he's so down to earth. But the
 main thing is his poetic device.'' Glin is about to quote from memory beginning with the poem's title, ``Next\ To {}-''
 }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``Stop!'' Rimat }shuts him
-up\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{. She\ can{}'t bear to hear the terrible words. What happened to
+{{}``Stop!'' Rimat }shuts him
+up{. She\ can{}'t bear to hear the terrible words. What happened to
 Alir? -\ she asks herself -\ Alir, who wouldn't~hurt a fly?}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Glin }resents her intervention. All he wanted to do
-was\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ explain how overwhelmed he was by the third and last line -- how
+{Glin }resents her intervention. All he wanted to do
+was{ explain how overwhelmed he was by the third and last line -- how
 its deviation from the poem's initial structure sharpened its meaning. Instead he says:\ {}``The way he used to say
 that in a moment he'd commit to memory the poem }he'd conceived\ in his mind and heart
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{and then jot it down in his notebook -{}'' }
+{and then jot it down in his notebook -{}'' }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``You remember my stories.'' }
+{{}``You remember my stories.'' }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{\textquotedbl}That's such an original way of putting it.''}
+{{\textquotedbl}That's such an original way of putting it.''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Rimat doesn{}'t tell him that when a moment of inspiration~came over
+{Rimat doesn{}'t tell him that when a moment of inspiration~came over
 Alir,~Saffia~would neither sing nor play his violin\ {}--\ the moment was too precious. Those~unforgettable times,
 living from hand to mouth in that hole-in-the-wall. But Saffia insisted that you don't abandon a friend to
 homelessness. So} he{}'d invited Alir to move in with his brother Boni into the glassed in veranda, beds foot to
@@ -457,53 +404,53 @@ knows that Boni has become Chief Executive Officer of the Public Television Netw
 mention the fact that she has no TV. But~thanks to Gidal too she knows about the calamity that befell Zakod, and about
 Michlor who went abroad to pursue his medical career and became a world-famous\ pediatrician. Gidal attributes the
 absence of any mention of Shouba on the media to his being an applied chemist. And Alir's absence from the media? Well,
-how many poets enjoy the limelight? She returns the disturbing scr\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ap
+how many poets enjoy the limelight? She returns the disturbing scr{ap
 of paper to Glin and takes up her embroidery.}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{After folding the
-}note\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{and putting it back
+{After folding the
+}note{\ }{and putting it back
 in his pocket Glin dons his earphones and turns on the Walkman. }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``No!!!'' Rimat stops her ears. }
+{{}``No!!!'' Rimat stops her ears. }
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Glin }quickly
-switches\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{it off. ``Sorry, mom.'' }He comes over to pat her greying
+{Glin }quickly
+switches\ {it off. ``Sorry, mom.'' }He comes over to pat her greying
 hair.~ When he reaches her age his hair too will be grey.~ His father died~before a single hair of his\ turned white -
-that's what his mom told him.  She also told him that\textcolor{red}{\ }his father was\ dashingly handsome\ and had an
+that's what his mom told him.  She also told him that{\ }his father was\ dashingly handsome\ and had an
 aura of grace about him, that his speaking voice was mellifluous, that he had a lovely\ tenor\ singing voice, that from
 the violin~he had saved up every\ penny to buy\ he produced\ divine music. Glin knows~that
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{he didn{}'t inherit any of his father's traits except perhaps\ the
-love of music. No, not love.~Passion. He }presses\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{a button on the
+{he didn{}'t inherit any of his father's traits except perhaps\ the
+love of music. No, not love.~Passion. He }presses\ {a button on the
 Walkman and }music soon has him under its spell.~ 
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{~}
+{~}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{2}
+{2}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{Aera sits on the wooden bench
-out}side\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{. }It's getting darker.
-Soon\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{ Yamik will completely disappear into~the trunk~of the tree he's
+{Aera sits on the wooden bench
+out}side{. }It's getting darker.
+Soon{ Yamik will completely disappear into~the trunk~of the tree he's
 leaning against. Maybe he{}'s\ fallen asleep standing. When he }arrived he{}'d hugged her and Mother, kissed them both
 and then fell silent. He looks tired out. Who knows what he went through till he got here. Who knows what lies ahead of
 him when he leaves.\ 
 
-Mother emerges from the shack with a loaded tray.\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``Eat, my hungry
+Mother emerges from the shack with a loaded tray.\ {{}``Eat, my hungry
 son, drink, my thirsty son,'' she urges her
-}\textcolor{black}{nephew}\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{, ``you must've been on the road for
+}{nephew}{, ``you must've been on the road for
 hours.''}
 
-\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{{}``Many thanks, auntie,{\textquotedbl} Yamik says,
+{{}``Many thanks, auntie,{\textquotedbl} Yamik says,
 {\textquotedbl}but\ you`re overdoing it. I'm not hungry\ }and
-not\ \textcolor[rgb]{0.13333334,0.13333334,0.13333334}{thirsty.''}
+not\ {thirsty.''}
 
 \ {}``Because of what's on your mind,'' Mother sympathizes, seating herself on the doorstep. ``Even as a child you
 didn't feel hunger or thirst when you had something on your mind.''~ She{}'s afraid it{}'s not only~Balad\ matters that
 Yamik\ has on his mind.\ She fears something has come between Aera and Yamik. If her intuition is right - how dreadful!
 She can{}'t stop thinking about\ what she{}'d witnessed - the way Aera looked when she chatted with that
-skinny\textcolor{red}{\ }young fellow from the village as the two of them stood outside the packing shed. Aera's
+skinny{\ }young fellow from the village as the two of them stood outside the packing shed. Aera's
 hands~hung loosely at her sides, but\ her twitching fingers gave her away.~ She knows~her daughter like the palm of her
 hand.~ Once again she turns to Yamik, ``Tell us something. Only what's fit for our ears,\ of course.{}'' Then she asks
-in a whisper as if alluding to some mysterious vision,\ {}''Did\textcolor{red}{\ }you get to the Valley?'' 
+in a whisper as if alluding to some mysterious vision,\ {}''Did{\ }you get to the Valley?'' 
 
 {}``Not yet, auntie,'' says Yamik. ``It's not easy for us Balads to get there. But I will. As shall we all.'' 
 
@@ -531,7 +478,7 @@ nephew, to my daughter's husband who is like a son to me, and they aren't meant 
 
 {}``Like what, Mother dear?'' 
 
-{}``About that\ skinny\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }lad from their village, for example -{}'' 
+{}``About that\ skinny{\ }lad from their village, for example -{}'' 
 
 Aera releases a tinkle of laughter.\ ~``About that skinny lad from their village, for example, I shall~tell Yamik
 myself. That story is mine.'' How lucky the allusion to Glin came from\ Mother.\ She{}'s relieved. She feels Glin all
@@ -545,7 +492,7 @@ Mother says, ``Time was when my daughter was mine.''
 
 {}''I\ didn't say, `Time was when my wife was mine',{}''\ Yamik\ remarks.
 
-Aera doesn't quite know what to make of Yamik's words. ``Well, now you did\textcolor[rgb]{0.0,0.4392157,0.7529412}{
+Aera doesn't quite know what to make of Yamik's words. ``Well, now you did{
 -}{}'' she retorts expecting\ that the business at hand is about to~be broached. 
 
 {}``Aera, you haven't done it yet.''~ 
@@ -558,7 +505,7 @@ Mother's voice is heard from the shack, ``Daughter, listen to your~man.''
 
 {\textquotedbl}This is between the two of us!'' Aera calls back.
 
-{}``Where's your father?{\textquotedbl} ~Mother doesn't let up.\ {\textquotedbl}Where\textcolor{red}{\ }are your
+{}``Where's your father?{\textquotedbl} ~Mother doesn't let up.\ {\textquotedbl}Where{\ }are your
 brothers and sisters?'' 
 
 Neither does Aera let up, ``Mother, \textit{go to sleep.}{}'' 
@@ -576,7 +523,7 @@ does one person have on his own?''
 {}``Mother,'' Yamik pleads directing his voice to the shack, ``good night.{\textquotedbl} 
 
 {}``There are people who can do things by themselves, but I'm not one of
-them,{}''\ Yamik\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }confesses to Aera who has to admire his candor and
+them,{}''\ Yamik{\ }confesses to Aera who has to admire his candor and
 modesty.\ {}``The guard won't see that you're coming back,{}''\ he goes on, ``because it'll be pitch dark. To-night,
 when I leave, I'll dig a bit deeper there. You'll have plenty of room to slide through there and back.{\textquotedbl} 
 
@@ -591,8 +538,8 @@ out through the gate while the guard is busy with the lock. Mother keeps singing
 you've~already tied together and slide back under the fence. The guard starts walking away\ slowly. You said he limps.
 You wait patiently until he's very close to that~iron peg protruding from the ground. That's critical. To wait
 patiently and not to act too soon. And then -  only then -\ one strong push!\ Then you walk backwards to the fence,
-continuing to sweep over your tracks using those dry twigs\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }like a broom. You
-then slide outside. That's it. Done. They'll think that he tripped\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }because
+continuing to sweep over your tracks using those dry twigs{\ }like a broom. You
+then slide outside. That's it. Done. They'll think that he tripped{\ }because
 of his limp.'' 
 
 {}``And if he yells?'' 
@@ -606,7 +553,7 @@ How\ encouraged he was by the rugged determination of the experienced older man 
 about that skinny lad from their village?'' 
 
 {}``I'll make you some coffee and tell you,{}'' she says, moving towards the doorway. Yamik's question has~wiped away
-Glin's \textcolor{black}{imminence}. Passing by him she\ carefully dodges his hand, but his voice pursues her.\ 
+Glin's {imminence}. Passing by him she\ carefully dodges his hand, but his voice pursues her.\ 
 
 {}``Do you know how to blend in Mother's secret spices?'' 
 
@@ -636,7 +583,7 @@ deferment on the grounds that his mother is a widow and he's an only son. But th
 he objects to anything military, anything to do with armies, fighting,~wars. In his spare\ time he works in a shop in
 the village that sells radios and what not. One day he came to the office of the packing shed to talk to the
 boss\ about something and that's~how we met. Only one thing interests him -- music.'' Aera realizes there's no point
-telling Yamik about Glin's\ original\textcolor{red}{\ }sense\ of humor. He wouldn't get it. 
+telling Yamik about Glin's\ original{\ }sense\ of humor. He wouldn't get it. 
 
 {}``Music?'' Yamik repeats a bit surprised.
 
@@ -709,7 +656,7 @@ you?''
 {}``There's still some time.'' Yamik draws~her close and she cannot but give in. ``I have only two things always on my
 mind, bombs and love. No,\ love and bombs. No, three things -\ love and bombs and a baby.'' 
 
-Aera's shell-of-a-being is in Yamik's arms.\textcolor{red}{\ }Her other self dissolves into Glin's. 
+Aera's shell-of-a-being is in Yamik's arms.{\ }Her other self dissolves into Glin's. 
 
 ~
 
@@ -731,7 +678,7 @@ By my reckoning Glin is going to be called up for the army any day now. I can im
 safety.
 
 Do you remember that it was I who suggested his name? How Saffia clapped his hands and said, {\textquotedbl}Glin! It
-sounds so clear and pure! Clear and pure like one unique \textcolor{black}{note of music}!{\textquotedbl}
+sounds so clear and pure! Clear and pure like one unique {note of music}!{\textquotedbl}
 
 Rimat, forever my beloved, there has been a change in my life. Two months ago I fixed up a storeroom~about thirty paces
 from the house. I put in a chair, a desk and a reading lamp. This is where I sit now as I write to you. It is here that
@@ -763,7 +710,7 @@ far end of the farm and wait there for the mail-collection van.
 
 4
 
-A car~draws up outside.\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }
+A car~draws up outside.{\ }
 
 Shouba hurries from the kitchen into the living room, not removing his stained apron. He rushes round the roomful of
 odds and ends, junk strewn about. He{}'d intended to make the place look a bit more civilized in preparation for Boni's
@@ -786,7 +733,7 @@ about the day and time. {\textquotedbl}Is this the right day and time?{\textquot
 his guest. 
 
 ~Being addressed by his old nickname affects Bonimi. It's been so long since he~heard it, so long that he's been known
-by\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }one and all as Bonimi Saffia. He follows Shouba, apologizing, ``Sorry I
+by{\ }one and all as Bonimi Saffia. He follows Shouba, apologizing, ``Sorry I
 couldn't get here sooner.{\textquotedbl}
 
 ~{\textquotedbl}You look so much like Saffia!{\textquotedbl} Shouba puts a hand over his mouth, uncomfortable about the
@@ -796,7 +743,7 @@ way it slipped out.
 I'm~far from it. He was tall and I'm short, he was trim and I'm{\dots}\ well{\dots} plain pudgy. {\textquotedbl} 
 
 {\textquotedbl}I'm sorry,{\textquotedbl} Shouba apologizes, thinking: Saffia's face was unblemished,
-and\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }you have a nasty scar on your cheek.\ \ How did that happen,
+and{\ }you have a nasty scar on your cheek.\ \ How did that happen,
 he\ wonders. Saffia's young brother was always so quiet, so withdrawn, never got into fights.
 
 Bonimi stretches his stubby fingers, {\textquotedbl}And he had a fine hand, such delicate fingers -{\textquotedbl}
@@ -822,8 +769,8 @@ Bonimi accepts the barb with equanimity. {\textquotedbl}It's eighteen years now 
 {\textquotedbl}Oh my God!{\textquotedbl} Shouba exclaims.
 
 ~Bonimi attributes this outburst to the painful memory, but realizes he's wrong~as Shouba cries,
-{\textquotedbl}Heavens!\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }I forgot!{\textquotedbl}
-\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }and darts out of the room. He returns a moment later and explains,
+{\textquotedbl}Heavens!{\ }I forgot!{\textquotedbl}
+{\ }and darts out of the room. He returns a moment later and explains,
 {\textquotedbl}I forgot I left something on the burner in the kitchen.{\textquotedbl}~ He glances at Boni's face. It's
 as placid as ever. \textit{He} hasn't become forgetful. Because he's younger? Not necessarily. It's because he's solid.
 That was their family. Saffia too was solid, so very solid. Saffia Saffia. Given name and surname the same. They called
@@ -853,7 +800,7 @@ Rimat's? Slept feet-to-feet in the glassed-in veranda?{\textquotedbl}
 
 ~What luck that it{}'s Boni who mentioned Alir's poetry! Shouba is encouraged. Now it's easier for him to go on:
 {\textquotedbl}He published two collections...
-small\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }editions.{\textquotedbl}
+small{\ }editions.{\textquotedbl}
 
 {\textquotedbl}He was the first poet I ever knew,{\textquotedbl} Bonimi recollects fondly. {\textquotedbl}I shall never
 forget the way he would say that in a moment he would commit to memory the poem he'd conceived in his mind and heart
@@ -863,7 +810,7 @@ and then jot it down in his notebook. What's he doing these days?{\textquotedbl}
 
 {\textquotedbl}At what university?{\textquotedbl}
 
-{\textquotedbl}Not even \textcolor{black}{at} a high-school.\textcolor{red}{\ \ }\textcolor{black}{In a} primary
+{\textquotedbl}Not even {at} a high-school.{\ \ }{In a} primary
 school{\dots} and last month he got the sack -{\textquotedbl} 
 
 {\textquotedbl}Why?{\textquotedbl} Bonimi asks. This, he surmises, must be the reason for Shouba's phone call.\ 
@@ -893,7 +840,7 @@ so damned impulsive, so stupid. What should he say now for the conversation to r
 
 Bonimi is engulfed with past memories. This kind of argument reminds him of those shouting matches between his brother
 and his buddies in the old days.\ {\textquotedbl}It's terrible that this happened to Alir\ because of one
-short\ poem,``\  he says. ``Just because of\textcolor{red}{\ }\textcolor{black}{a }mere three lines.{\textquotedbl}\ 
+short\ poem,``\  he says. ``Just because of{\ }{a }mere three lines.{\textquotedbl}\ 
 
 Shouba is relieved. There's still hope. {\textquotedbl}He's completely~gone to pieces,{\textquotedbl} he says and
 decides not to waste another moment. {\textquotedbl}I was wondering if you could perhaps be of assistance to
@@ -919,7 +866,7 @@ upon a time I was a milkman?{\textquotedbl}
 {\textquotedbl}The bike belonged to both of us,{\textquotedbl}\ Bonimi wishes to be precise. {\textquotedbl}Could you
 give me Alir's phone number?{\textquotedbl}
 
-{\textquotedbl}Here -{\textquotedbl} Shouba tears off \textcolor{black}{a bit of an }old newspaper and jots it
+{\textquotedbl}Here -{\textquotedbl} Shouba tears off {a bit of an }old newspaper and jots it
 down.\ \ {\textquotedbl}And{\dots} that poem -{\textquotedbl}\ he asks concerned.
 
 {\textquotedbl}Forget it.{\textquotedbl} From the inside pocket of his tailored jacket Bonimi produces an elegant
@@ -928,7 +875,7 @@ it to Shouba. {\textquotedbl}Here's my direct number.{\textquotedbl}
 
 This card must not get lost, Shouba warns himself, but where will he find a safe place for it in this mess? He folds his
 fingers round it.\ He also knows that the visit should end now. His esteemed~guest's time is precious.
-He's\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }angry with himself for being too cowardly to even hint at the other
+He's{\ }angry with himself for being too cowardly to even hint at the other
 subject he wanted to raise. He stands up quickly, inadvertently hitting a cooking pot placed on a bar stool, knocking
 it on the floor. {\textquotedbl}Sorry.{\textquotedbl} It isn't clear to whom\ he's apologizing when he lifts up the
 pot.
@@ -959,7 +906,7 @@ even after everyone left{\dots}  and Saffia and Rimat didn't stop arguing -{\tex
 
 ~Shouba doesn't believe this. {\textquotedbl}What about?{\textquotedbl}
 
-{\textquotedbl}She wanted \textcolor{black}{him} to give it all up,{\textquotedbl} Bonimi says. {\textquotedbl}She said
+{\textquotedbl}She wanted {him} to give it all up,{\textquotedbl} Bonimi says. {\textquotedbl}She said
 'A married man who's going to be a father should devote his life to his family and that alone. Nothing else.{}' And
 Saffia insisted one could fill several functions and meet\ many obligations at one and the same time. He was that kind
 of person.{\textquotedbl} 
@@ -1013,7 +960,7 @@ he has thus found the way to broach the subject.
 {\textquotedbl}Yes, yes,{\textquotedbl} Bonimi responds distractedly. {\textquotedbl}If you should happen to hear
 of{\dots} Rimat {\dots} anything -{\textquotedbl}\ 
 
-{\textquotedbl}Of course\textcolor[rgb]{0.0,0.4392157,0.7529412}{{\dots}}{\textquotedbl} Shouba leaves it at that.
+{\textquotedbl}Of course{{\dots}}{\textquotedbl} Shouba leaves it at that.
 {\textquotedbl}Would you like to give your chauffeur a ring?{\textquotedbl}
 
 {\textquotedbl}No need. I'll walk back to the office.\ \ A chance to use the old muscles.{\textquotedbl} This time, when
@@ -1028,7 +975,7 @@ and that's something he can't do. It's too intimate, too precious. Pushing away 
 
 Boni sounds genuine to Shouba. His words encourage him to continue, {\textquotedbl}I checked the mechanisms several
 times myself and also together with Saffia. I'll never understand till my dying
-day\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }why the damned\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }bombs exploded
+day{\ }why the damned{\ }bombs exploded
 before they were meant to -{\textquotedbl}\ 
 
 {\textquotedbl}You have nothing to blame yourself for,{\textquotedbl} Bonimi says~emphatically. He waves his arms around
@@ -1076,7 +1023,7 @@ calmly.  {\textquotedbl}But now, to be practical, I \textit{must\ }make this pho
  Before he locates it Shouba's phone is heard ringing somewhere. 
 
 {\textquotedbl}It might be for me,{\textquotedbl} Bonimi says having no choice but to wait for Shouba to unearth the
-phone~from under some tattered\textcolor{red}{\ }blankets and hand him the receiver. 
+phone~from under some tattered{\ }blankets and hand him the receiver. 
 
 {\textquotedbl}Saffia speaking,{\textquotedbl} he responds. {\textquotedbl}Hello, Ezlip{\dots} I'm fine... Alive and
 kicking... Of course{\dots} Please let Janha know -{\textquotedbl} By the time he puts the receiver down sirens of
@@ -1159,18 +1106,18 @@ cuts and bruises?{\textquotedbl}
 looking for experts in sound-engineering. And that'll be a real stepping stone for you after the army!{\textquotedbl} 
 
 {\textquotedbl}And you'll have endless opportunities later, in civilian life!{\textquotedbl}\  Glin follows
-ironically\textcolor{red}{\ }in the same vein, {\textquotedbl}What with all the useful contacts you'll have made, your
+ironically{\ }in the same vein, {\textquotedbl}What with all the useful contacts you'll have made, your
 career will be assured! ~Dear Goshu, I promise to think about it.{\textquotedbl} 
 
-\textcolor{black}{{\textquotedbl}If only I could believe you -{\textquotedbl} the boss shakes his head despairingly and
+{{\textquotedbl}If only I could believe you -{\textquotedbl} the boss shakes his head despairingly and
 then adds, {\textquotedbl}Congratulations, I heard that you passed the driving test - {\textquotedbl}}
 
-\textcolor{black}{{\textquotedbl}You see -{\textquotedbl} Glin chuckles, {\textquotedbl}I'm not a lost\ case\ altogether
+{{\textquotedbl}You see -{\textquotedbl} Glin chuckles, {\textquotedbl}I'm not a lost\ case\ altogether
 -{\textquotedbl}}
 
-\textcolor{black}{The boss disappears in his office without another word.\ }
+{The boss disappears in his office without another word.\ }
 
-\textcolor{red}{\ }{\textquotedbl}What were you two talking about?{\textquotedbl} Aera is curious.
+{\ }{\textquotedbl}What were you two talking about?{\textquotedbl} Aera is curious.
 
 ~{\textquotedbl}About nonsense,{\textquotedbl} Glin answers her. {\textquotedbl}But there \textit{is} something really
 important to talk about. That song that you sing -- what is \textit{that} about?{\textquotedbl} 
@@ -1249,7 +1196,7 @@ good?{\textquotedbl}
 
 {\textquotedbl}You always prefer the good news first, don't you?{\textquotedbl}\ \ the contractor humors him. 
 
-{\textquotedbl}Who knows if I'll survive until the bad,{\textquotedbl} Yamik replies.\textcolor{red}{\ }
+{\textquotedbl}Who knows if I'll survive until the bad,{\textquotedbl} Yamik replies.{\ }
 
 {\textquotedbl}I guess you're right, pal,{\textquotedbl} says the contractor, {\textquotedbl}but why so
 gloomy?{\textquotedbl} 
@@ -1277,7 +1224,7 @@ Yamik joins the contractor in mute prayer.
 {\textquotedbl}They promised to have an answer within a week,{\textquotedbl} says the contractor and adds,
 {\textquotedbl}but truth to tell, Yamik, I myself started having doubts whether we can handle it -{\textquotedbl} 
 
-{\textquotedbl}Why not?{\textquotedbl} Yamik asks, hoping not to give away his serious\textcolor{red}{\ }concern about
+{\textquotedbl}Why not?{\textquotedbl} Yamik asks, hoping not to give away his serious{\ }concern about
 such possible doubts. Renovating the auditorium in the television building means a close knowledge not only of that
 specific structure but of the whole surrounding area. Most precious information. ~
 
@@ -1313,7 +1260,7 @@ months.{\textquotedbl} he says.\
 The truck goes three quarters of the way around the remodeled roundabout and begins to ascend the newly paved road~to
 the site of the Eastern Hills Project. 
 
-{\textquotedbl}Whenever my son, who manages\textcolor{red}{\ }to take a university course while he's doing his army
+{\textquotedbl}Whenever my son, who manages{\ }to take a university course while he's doing his army
 service, has to submit a paper by a certain date, he calls that date a 'deadline' because of the killing
 stress.{\textquotedbl} The contractor regrets his words. His Ouli and his foreman Yamik are about the same age -- but
 how different their lives! Babies are born and their lot~is cast. How fortunate. How unfortunate.
@@ -1422,7 +1369,7 @@ contacts in that area. But as far as Alir is concerned, I'm pretty sure it'll wo
 
 {\textquotedbl}But you haven't, Shouba.\ \ Really. You haven't at all.{\textquotedbl} Bonimi realizes it's his turn to
 apologize. {\textquotedbl}What I said about that Balad - that was just my personal opinion. For your own good. It's
-been really good\textcolor{red}{\ }talking to you.{\textquotedbl} 
+been really good{\ }talking to you.{\textquotedbl} 
 
 {\textquotedbl}Same here, Boni,{\textquotedbl} Shouba says, happy that the communication channel is still open.
 {\textquotedbl}Goodbye then -{\textquotedbl} 
@@ -1548,7 +1495,7 @@ dirt road of the old gate. People milling around it add to the commotion. {\text
 
 {\textquotedbl}They found Moshko lying on the ground near the gate. Dead.{\textquotedbl} 
 
-{\textquotedbl}What?!\ {\textquotedbl}Rimat is aghast\textcolor{red}{. }{\textquotedbl}Yesterday evening, when you
+{\textquotedbl}What?!\ {\textquotedbl}Rimat is aghast{. }{\textquotedbl}Yesterday evening, when you
 looked out of the window at those two singing Balad women, you said afterwards that you'd seen Moshko fall down and
 then get up -{\textquotedbl} 
 
@@ -1559,7 +1506,7 @@ then get up -{\textquotedbl}
 {\textquotedbl}Seems it was someone else who got up,{\textquotedbl} he says. 
 
 Rimat's first reaction is to feel sorry for Moshko. Then she remembers the grievance she's held against him these
-past\textcolor{red}{\ }eighteen years. He was the one who stopped her at the village gate questioning her so nastily
+past{\ }eighteen years. He was the one who stopped her at the village gate questioning her so nastily
 whom she was coming to.\ When she told him it was Gidal, he said he'd go and check. He'd slammed and bolted the gate in
 her face then, one of her hands gripping the handles of the baby's cradle, the other holding the violin case, a
 rucksack full of clothes on her back. Next moment she was sorry for him again, remembering that  his wife had died not
@@ -1590,7 +1537,7 @@ They both know who's knocking at the door. Still, Rimat calls out, {\textquotedb
 Gidal opens the door just a crack. {\textquotedbl}May I come in?{\textquotedbl} 
 
 {\textquotedbl}Can't you come in like a normal human being?{\textquotedbl} Rimat responds slightly
-impatient\textcolor{red}{.\ \ }
+impatient{.\ \ }
 
 Gidal takes two steps inside and then stops when he becomes\ aware of Glin's presence. He asks, {\textquotedbl}Did you
 hear about what happened to Moshko?{\textquotedbl}
@@ -1636,7 +1583,7 @@ should have no illusions,'' Rimat speaks softly. ``I shouldn't have put it off. 
 might not help me settle here with the baby.{\textquotedbl} 
 
 {\textquotedbl}Rimat,{\textquotedbl} Gidal caresses her with his bovine eyes. Now is the time to tell her what has been
-on the tip of his tongue for quite\textcolor{red}{\ }a while. {\textquotedbl}Listen, Rimat, everybody knows that Glin's
+on the tip of his tongue for quite{\ }a while. {\textquotedbl}Listen, Rimat, everybody knows that Glin's
 deferment is only a way of buying time. Until he can get out of the army altogether -{\textquotedbl} 
 
 {\textquotedbl}To you I can say that that's true.{\textquotedbl} 
@@ -1663,7 +1610,7 @@ comfortable{\dots} now - {\textquotedbl}
 
 {\textquotedbl}He isn't a child anymore.{\textquotedbl} 
 
-{\textquotedbl}You know that he's like a pledge\textcolor{red}{\ }with me.{\textquotedbl} 
+{\textquotedbl}You know that he's like a pledge{\ }with me.{\textquotedbl} 
 
 {\textquotedbl}And when\textit{\ he'll} want to leave \textit{you}?{\textquotedbl} 
 
@@ -1680,13 +1627,13 @@ Gidal nods.
 {\textquotedbl}The history professor?{\textquotedbl} 
 
 {\textquotedbl}Throughout all the years he's written to me every once in a while -{\textquotedbl} Not to hurt Gidal's
-feelings Rimat doesn't specify that it has been\textcolor{red}{\ }\textcolor{black}{punctually}\textcolor{red}{\ }every
+feelings Rimat doesn't specify that it has been{\ }{punctually}{\ }every
 spring. {\textquotedbl}He's always offered his help. I never responded. Some weeks ago I wrote him and explained our
-situation. Well{\dots} Once upon a time you made it possible for us stay here thanks to\textcolor{red}{\ }the goodness
+situation. Well{\dots} Once upon a time you made it possible for us stay here thanks to{\ }the goodness
 of your heart. Now it'll be the same thing at his place.{\textquotedbl} 
 
-{\textquotedbl}That shocking disaster {\dots}{\textquotedbl} Gidal\textcolor{red}{\ \ \ }shudders at
-the\textcolor{red}{\ }memory. {\textquotedbl}It was so like him to get the best~defense lawyer for those two Balads -
+{\textquotedbl}That shocking disaster {\dots}{\textquotedbl} Gidal{\ \ \ }shudders at
+the{\ }memory. {\textquotedbl}It was so like him to get the best~defense lawyer for those two Balads -
 described as penniless. He always had to argue objectively no matter what. Thanks to him the two of them got off
 because of 'a shadow of doubt'. What did Saffia see in him?{\textquotedbl} 
 
@@ -1813,7 +1760,7 @@ has now emerged as a\ sound idea
 {\textquotedbl}My Aera -{\textquotedbl} Yamik is excited. He knows about different programs broadcast on television.
 He's watched them in places where he worked. Aera's idea is a challenge - though heaven knows how he could put it into
 practice. But when he does, he'll prove his independence of thought and action and win her admiration. He's aware of
-the way she proved her own creative thinking\textcolor{red}{. }through cultivating the friendship between herself and
+the way she proved her own creative thinking{. }through cultivating the friendship between herself and
 that lad from the village. He asks jokingly. {\textquotedbl}And what's going on with that skinny one? Who's only crazy
 about music?{\textquotedbl} \ 
 
@@ -1846,18 +1793,18 @@ mailman.{\textquotedbl}
 
 11 
 
-Bonimi's~desk is covered\textcolor{red}{\ }with sketches detailing the renovation. He and his aide Ezlip pore over them,
+Bonimi's~desk is covered{\ }with sketches detailing the renovation. He and his aide Ezlip pore over them,
 helping each other~decipher them by locating the~auditorium's demolished walls, the newly built walls, the angle of the
 stage, the expanded seating area that would double the number of seats in the auditorium from fifty to a
-full\textcolor{red}{\ }hundred.~ 
+full{\ }hundred.~ 
 
-{}``It's thanks to you that this renovation is going so well,'' Bonimi\textcolor{red}{\ }praises his aide.
+{}``It's thanks to you that this renovation is going so well,'' Bonimi{\ }praises his aide.
 
 {\textquotedbl}Thanks for the complement, sir,{\textquotedbl} Ezlip responds, {\textquotedbl}but the contractor deserves
 a lot of credit too. He's really tops. And this morning he told me about a slight change. Taking into account that he's
 going to be busy with the Eastern Hills Project for some time, his foreman will be in charge here. ~He's a Balad, but
-the contractor swears\textcolor{red}{\ }by him.{\textquotedbl} Observing that the CEO is studying the sketch of the
-lobby, he adds, {\textquotedbl}he thinks your suggestion to\textcolor{red}{\ }have the information desk against the
+the contractor swears{\ }by him.{\textquotedbl} Observing that the CEO is studying the sketch of the
+lobby, he adds, {\textquotedbl}he thinks your suggestion to{\ }have the information desk against the
 wall was nothing short of genius.{\textquotedbl} 
 
 {\textquotedbl}No need to go overboard,{\textquotedbl} Bonimi chuckles. 
@@ -1877,7 +1824,7 @@ Ezlip, while sensing the CEO's reservations, remarks casually, {\textquotedbl}in
 to be a photographer.{\textquotedbl}
 
 {\textquotedbl}I admit to it,{\textquotedbl} Bonimi raises his right hand. He knows Ezlip can't help looking at his scar
-now and again. On more than one occasion he's mentioned names of reputable\textcolor{red}{\ }plastic surgeons he could
+now and again. On more than one occasion he's mentioned names of reputable{\ }plastic surgeons he could
 consult. He's\ always thanked him, said he'll look into it, but of course didn't. {\textquotedbl}I used to be a milkman
 for livelihood. Photography was just a hobby. But that hobby indeed got my foot in the TV world,{\textquotedbl} he
 reminisces casually.\ 
@@ -1901,7 +1848,7 @@ pairs of shoes -- one his and one Alir's -- on the floor of the\ glassed-in vera
 paint-spattered ladder leaning against the wall, some cans and brushes next to it. ~Saffia propping up baby Glin on the
 bicycle seat and~Rimat's fingers keeping his small body from slipping off. ~Her scream, 'Careful, you loony!' echoes in
 his ears. What's missing among this collection is the photo he once took of Saffia waking up from a nap - face puffy,
-hair disheveled,\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }\textcolor[rgb]{0.13333334,0.13333334,0.13333334}{eyes
+hair disheveled,{\ }{eyes
 unfocused.} ~Rimat loved that photo and appropriated it. He'd planned to print another picture from~the negative, but
 the tragedy devastated everything before he got around to it, and the negatives were lost forever.
 
@@ -1913,7 +1860,7 @@ few more days.{\textquotedbl}
 From the very start Ezlip had been against the choice of Alir to emcee the ceremony - giving the impression of a
 scatterbrain. In the middle of the proceedings he could simply lose it. But the CEO had thrown his full weight behind
 his choice, maintaining~that appointing an MC who is a poet and not one of those~slick professionals would help rid TV
-of its stuffy image.\textcolor{red}{\ }~Ezlip now finds a way to avoid denigrating Alir as a person by remarking,
+of its stuffy image.{\ }~Ezlip now finds a way to avoid denigrating Alir as a person by remarking,
 {\textquotedbl}His notorious poem hasn't increased his popularity.{\textquotedbl} 
 
 {\textquotedbl}There's no need to blow that poem out of proportion,{\textquotedbl} Bonimi responds. {\textquotedbl}What
@@ -1950,7 +1897,7 @@ heat. {\textquotedbl}Excuse me,{\textquotedbl} he says to Ezlip and clicks the i
 
 {\textquotedbl}Yes, Mr. Saffia?{\textquotedbl} the secretary's voice comes over the speaker.
 
-{\textquotedbl}Janha, could you remind me what time the group of {}'Selected Recruits{}'\textcolor{red}{\ }is
+{\textquotedbl}Janha, could you remind me what time the group of {}'Selected Recruits{}'{\ }is
 expected?{\textquotedbl}
 
 {\textquotedbl}In a quarter of an hour, sir, when they finish their tour.{\textquotedbl} 
@@ -1965,7 +1912,7 @@ beforehand.{\textquotedbl}
 Ezlip gets up to leave. {\textquotedbl}There's a year and a half to go till next elections,{\textquotedbl} he says as if
 by the way. {\textquotedbl}It occurred to me that you might consider running -{\textquotedbl}
 
-So that's what was behind his aide's sycophantic display\textcolor{red}{\ }and his research in\ \ {}'Who's Who{}'.
+So that's what was behind his aide's sycophantic display{\ }and his research in\ \ {}'Who's Who{}'.
 {\textquotedbl}For what party?{\textquotedbl} Bonimi asks.
 
 {\textquotedbl}Any party would grab you with both hands.{\textquotedbl} 
@@ -1974,7 +1921,7 @@ So that's what was behind his aide's sycophantic display\textcolor{red}{\ }and h
 your accolades, but it's out of the question.{\textquotedbl}\ 
 
 Ezlip waves a hand in the air and leaves the room. He has no doubt that the idea he raised with the CEO~will sooner than
-later take root\textcolor{red}{.\ }
+later take root{.\ }
 
 Bonimi quietly locks the door behind his energetic assistant, returns to his chair, takes a slip of paper from his
 wallet, glances at it and dials.~ After several rings the receiver is picked up at the other end with an absent-minded
@@ -2031,9 +1978,9 @@ That too is thanks to you. Boni, you're brilliant!{\textquotedbl}
 {\textquotedbl}And you're not annoyed with me for what I said~about the overnight permit for that Balad
 --{\textquotedbl} 
 
-{\textquotedbl}Of course not.{\textquotedbl} Truth\textcolor{red}{\ }was, he'd actually been more than annoyed with Boni
+{\textquotedbl}Of course not.{\textquotedbl} Truth{\ }was, he'd actually been more than annoyed with Boni
 telling him he was playing with fire when he asked for his help to get thet overnight pass for
-that\textcolor{red}{\ }Balad. But he must now put that aside. 
+that{\ }Balad. But he must now put that aside. 
 
 Bonimi clears his throat before asking, with some hesitation, {\textquotedbl} Is there any{\dots} news?{\textquotedbl} 
 
@@ -2160,7 +2107,7 @@ from dying. I did a terrible thing.{\textquotedbl}
 
 {\textquotedbl}I don't want to hear,{\textquotedbl} Glin says, {\textquotedbl}I'm afraid.{\textquotedbl}\ 
 
-Aera takes a few steps towards the mouth\textcolor{red}{\ }of the cave intending to leave. Glin blocks her exit,
+Aera takes a few steps towards the mouth{\ }of the cave intending to leave. Glin blocks her exit,
 {\textquotedbl}Why are you leaving me?{\textquotedbl} 
 
 {\textquotedbl}If you don't care about what I went through, what I'm going through, what I shall always go through, then
@@ -2193,7 +2140,7 @@ wandering from place to place.{\textquotedbl}
 {\textquotedbl}Yes. But I was too small to remember. I don't remember Pale Blue Valley. ~But because of mother's
 stories, it's as if I remember it{\dots}\ \ If only I had not done this terrible thing! It's a curse.{\textquotedbl} 
 
-{\textquotedbl}What you did, you did for a great~ideal.'' Glin, aroused by\textcolor{red}{\ }the ideal, proclaims,
+{\textquotedbl}What you did, you did for a great~ideal.'' Glin, aroused by{\ }the ideal, proclaims,
 ``That's how you should see it.{\textquotedbl} 
 
 {\textquotedbl}It's a terrible ideal.{\textquotedbl} 
@@ -2211,7 +2158,7 @@ ears forever -{\textquotedbl}
 {\textquotedbl}But I can't.{\textquotedbl} 
 
 {\textquotedbl}If you carry on like this, you'll make me die too.
-Make\textcolor{red}{\ }yourself\textcolor{red}{\ }imagine that it wasn't you. That it was somebody else, somebody else
+Make{\ }yourself{\ }imagine that it wasn't you. That it was somebody else, somebody else
 who is no more.{\textquotedbl} Glin takes her in his arms and now feels her warm response. 
 
 {\textquotedbl}So tell me who I am -- {\textquotedbl} Aera feels her\ body giving in to his embrace.
@@ -2396,10 +2343,10 @@ Colleague number two responds, {\textquotedbl}'The Balad Problem -- Background, 
 Implications.{}'{\textquotedbl} 
 
 A handful, Zakod says to himself, recalling that it was this very topic that had intrigued him and aroused his curiosity
-when he had glanced at the invitation. When they\textcolor{red}{\ }came\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }to
-the Questions-and-Answers\textcolor{red}{, }he saw himself standing up and asking, {\textquotedbl}Why call it 'The
+when he had glanced at the invitation. When they{\ }came{\ }to
+the Questions-and-Answers{, }he saw himself standing up and asking, {\textquotedbl}Why call it 'The
 Balad Problem'? Why not 'We and the Balads -- Our Mutual Problem'?{\textquotedbl} He had hoped that by the time~this
-symposium\textcolor{red}{\ }took place he would~formulate a cohesive body of ideas about this topic and be ready to
+symposium{\ }took place he would~formulate a cohesive body of ideas about this topic and be ready to
 express them. But then he had forgotten all about it and only remembered that he would not mind attending.
 {\textquotedbl}Who is chairing that session?{\textquotedbl} he asks his colleagues. 
 
@@ -2476,7 +2423,7 @@ failed to respond to Michlor's letter of condolence. It also relates to the pain
 centers around Saffia.
 
 {\textquotedbl}The Dean's secretary told me they'd received a cable from him saying he's flying with disaster-relief
-forces to\textcolor{red}{\ }that godforsaken area hit by that terrible hurricane. He'll be organizing there an
+forces to{\ }that godforsaken area hit by that terrible hurricane. He'll be organizing there an
 emergency children's hospital.{\textquotedbl} 
 
 {\textquotedbl}The man is a saint,{\textquotedbl} says Zakod lowering his head. He'd rather not confront the pitying
@@ -2489,7 +2436,7 @@ mysterious accident during the so-called `Phony Occupation'?{\textquotedbl}
 
 {\textquotedbl}What was that man's name?{\textquotedbl} asks colleague number one.
 
-Zakod is conflicted. If he says he forgot, what will they think - that he's losing it?\textcolor{red}{\ }That he is
+Zakod is conflicted. If he says he forgot, what will they think - that he's losing it?{\ }That he is
 suffering from a cognitive decline? Or that for some reason he would rather not spell out Saffia's name? That the
 question~embarrasses him? He says, {\textquotedbl}Saffia. Saffia Saffia.{\textquotedbl} 
 
@@ -2633,7 +2580,7 @@ Upstairs a door opens and is followed by footsteps descending down. Yamik spring
 hears those steps too and hurries back to the hall, the roll of building plans under his arm. 
 
 {\textquotedbl}Ouli!{\textquotedbl}\ \ The contractor stretches his free hand towards a young man in a khaki undershirt
-and slacks,\textcolor{red}{\ }a dog-tag hanging from his neck.\ 
+and slacks,{\ }a dog-tag hanging from his neck.\ 
 
 ~{\textquotedbl}Dad!{\textquotedbl} the young man smiles as they embrace. 
 
@@ -2823,7 +2770,7 @@ could\ rest easy.{\textquotedbl}
 right from infancy in fact, I tried to teach him that bombs and killing and wars and armies are terrible.~ To abhor all
 of them. I wanted to protect and guard~what~Saffia left me for safe-keeping. And I lied to you. Glin doesn't have any
 disability. He's completely healthy. ~It was because he listened to me that he became a conscientious objector and
-could thus avoid conscription.{\textquotedbl}\textcolor{red}{\ }
+could thus avoid conscription.{\textquotedbl}{\ }
 
 Zakod is impressed, {\textquotedbl}I am\ proud of him!{\textquotedbl} 
 
@@ -2841,7 +2788,7 @@ Zakod is impressed, {\textquotedbl}I am\ proud of him!{\textquotedbl}
 tragedy did not change my mind.\ It only strengthened it.{\textquotedbl} He turns off the television altogether. The
 screen becomes~a flat metallic grey.
 
-Except for a hazy beam of light coming\textcolor[rgb]{0.8901961,0.42352942,0.039215688}{\ }from the kitchen Rimat and
+Except for a hazy beam of light coming{\ }from the kitchen Rimat and
 Zakod are in semi-darkness. 
 
 {\textquotedbl}Since we're into telling all kinds of truths,{\textquotedbl} Rimat says, {\textquotedbl}why didn't you
@@ -2958,7 +2905,7 @@ top-notch contractor.{\textquotedbl}
 
 {\textquotedbl}Shhh{\dots}{\textquotedbl} Shisha manages to caution him in time and he hurries back to his post. She
 brings out a small mirror from under her desk and checks the contours of her lipstick. Then she straightens her posture
-by\textcolor{red}{\ }throwing back her shoulders,\ and finally thrusts her fingers into her curls~to puff them out. Oh!
+by{\ }throwing back her shoulders,\ and finally thrusts her fingers into her curls~to puff them out. Oh!
 The nail polish! She'd forgotten all about it! Hopefully it's already dry. The main thing is that she's ready for the
 guide now emerging from the adjacent corridor,~followed by his tour group. He~crosses the lobby and stops at the
 exhibit about to address the group. When they're settled around him he begins, {\textquotedbl}Ladies and gentlemen,
@@ -2978,10 +2925,10 @@ tries to remain hidden while not letting him out of sight. He's deep in conversa
 Suddenly he turns round as if searching for somebody. Herself? Still hidden she manages to get a glimpse of his face.
 It's him! He{}'s filled out and grown taller.\ But where did he get that scar on his cheek? What kind of injury could
 that finicky youngster have suffered? Her anger at him has not waned over the years. She hadn't expected to bump into
-him when she planned joining this tour\textcolor[rgb]{0.8901961,0.42352942,0.039215688}{.} She's here because of
+him when she planned joining this tour{.} She's here because of
 Alir.\ \ Since reading that dreadful poem she's wanted to settle accounts with him. Just as it's thanks to Gidal that
 she knows that Boni has been appointed CEO of Public Television, it's thanks to Zakod that she knows that as emcee of
-the coming\textcolor[rgb]{0.8901961,0.42352942,0.039215688}{\ }inauguration ceremony for the renovated auditorium\ Alir
+the coming{\ }inauguration ceremony for the renovated auditorium\ Alir
 has been given a room in the TV building. 
 
 After reading out to her that item in the newspaper, Zakod had asked her what she made of it. She'd just shrugged her
@@ -3053,7 +3000,7 @@ Rimat quickly retraces her steps to the elevator bay, pushes the `UP' button, en
 presses 4. The second the elevator stops and the door slides open she steps out.\ She trusts her memory to find the
 right room. She knocks on the door. No answer. She carefully opens the door just a crack. Nobody's inside. She closes
 the door behind her and takes a look around. The desk is covered with books and brochures. A worn\ out\ coat hangs from
-a peg on the wall. She guesses\ that its bulging pockets are stuffed with notes and\textcolor{red}{\ }newspapers
+a peg on the wall. She guesses\ that its bulging pockets are stuffed with notes and{\ }newspapers
 clippings. She guesses right.\ 
 
 Alir enters the room with a handful of papers. {\textquotedbl}Sorry,{\textquotedbl} he steps back diffidently.\ Seeing a
@@ -3085,7 +3032,7 @@ area.{\textquotedbl} She pats his hair. {\textquotedbl}There's a new color here.
 
 {\textquotedbl}How did you get here? And where from? Why did we disappear from each other all these years? And the baby?
 Do you remember how I would grab the cradle with him inside -- grab it by the new handles your friend Gidal
-fixed\textcolor[rgb]{0.8901961,0.42352942,0.039215688}{\ }on\textcolor[rgb]{0.8901961,0.42352942,0.039215688}{\ }{}-
+fixed{\ }on{\ }{}-
 and spin it round and round? And you'd almost faint from fear? Who does he look like? You? Saffia? Does he play the
 violin? How did you find me?{\textquotedbl}\ 
 
@@ -3149,7 +3096,7 @@ had nothing to do with~what happened to Saffia... nothing - {\textquotedbl}
 {\textquotedbl}Yes you did! You didn't do anything to stop~Saffia from being carried away by such rhetorics. The words
 that led him to that deadly course of action. You didn't write words against those words. And now you wrote a poem
 ending with such a line. You're so self-centered.\ So
-egotistical.\textcolor[rgb]{0.8901961,0.42352942,0.039215688}{\ }You don't think about what people might and can read
+egotistical.{\ }You don't think about what people might and can read
 in your words!{\textquotedbl} \ 
 
 Turning away from Rimat Alir covers his face with his hands. In his mind he sees that little Balad girl crying about her
@@ -3175,11 +3122,11 @@ she moans.
 {\textquotedbl}A healthy sign,{\textquotedbl} Mother leaves whatever she's busy with at the stove, comes and bends over
 her, beaming. 
 
-{\textquotedbl}I'm scared,{\textquotedbl} Aera clings to Mother\textcolor{red}{.}
+{\textquotedbl}I'm scared,{\textquotedbl} Aera clings to Mother{.}
 
-Mother says, {\textquotedbl}I was also scared the\textcolor{red}{\ }first time.{\textquotedbl} 
+Mother says, {\textquotedbl}I was also scared the{\ }first time.{\textquotedbl} 
 
-{\textquotedbl}I don't believe you,{\textquotedbl} Aera presses her lips\textcolor{red}{\ }to Mother's~dry skin,
+{\textquotedbl}I don't believe you,{\textquotedbl} Aera presses her lips{\ }to Mother's~dry skin,
 breathes in its musky aroma. {\textquotedbl}You only want to make me feel strong. You don't know what fear
 is.{\textquotedbl} She leans her head against her mother's breast. {\textquotedbl}I want to be back inside you. To be
 and not to be.{\textquotedbl} 
@@ -3212,7 +3159,7 @@ for you and your baby, and for his grandma who's already crazy about him.{\textq
 {\textquotedbl}Mother, my beloved Mother --{\textquotedbl} Aera{}'s  sobbing. ~
 
 Mother feels she ought to stay with her daughter a little longer. {\textquotedbl}I look at this cradle and say to myself
-that it's not new but is\textcolor{red}{\ }still in very good condition. You can tell that it belonged to fine people
+that it's not new but is{\ }still in very good condition. You can tell that it belonged to fine people
 who loved and cared for their baby who lay in it. It's a cradle that brings good fortune. And look at the
 handles!{\textquotedbl} Mother tugs at the handles. {\textquotedbl}\textit{Are they sturdy}! You can see they're newer
 than the cradle itself and were fixed in place by someone with good hands. Let me feel the mattress, see if it's
@@ -3220,13 +3167,13 @@ well-stuffed.{\textquotedbl}
 
 {\textquotedbl}The main thing is the idea - not the small details,{\textquotedbl} Aera responds echoing Glin's words. 
 
-Mother lifts the mattress. A slip of paper detaches itself from its underside and\textcolor{red}{\ }flutters down to the
+Mother lifts the mattress. A slip of paper detaches itself from its underside and{\ }flutters down to the
 floor. 
 
 {\textquotedbl}What's that?{\textquotedbl} Aera is alarmed. 
 
 A bit of nothing-{\textquotedbl} Mother picks up from the floor~an old yellowed\ photo of a man who looks dead. She
-conceals\textcolor{red}{\ }it between the palms of her hands. 
+conceals{\ }it between the palms of her hands. 
 
 Aera sits up, {\textquotedbl}\textit{What is it}?{\textquotedbl}~ 
 
@@ -3274,7 +3221,7 @@ Blue Valley.{\textquotedbl}\
 to her chores at the kitchen alcove. Suddenly Aera asks, {\textquotedbl}Mother dearest, will you ever stop wearing
 black?{\textquotedbl} 
 
-{\textquotedbl}It's my\textcolor{red}{\ }own\ skin,{\textquotedbl} Mother says without a moment's reflection. 
+{\textquotedbl}It's my{\ }own\ skin,{\textquotedbl} Mother says without a moment's reflection. 
 
 ~
 
@@ -3328,7 +3275,7 @@ Rimat asks, {\textquotedbl}Would you like some more?{\textquotedbl}
 {\textquotedbl}That's~how I used to ask the girls. 'Would you like some more?' Thank you, Rimat, but I've had my
 fill.{\textquotedbl} 
 
-Rimat sprays the window with cleaning fluid. Wiping the\ windowpane clear something\textcolor{red}{\ }in the distance
+Rimat sprays the window with cleaning fluid. Wiping the\ windowpane clear something{\ }in the distance
 draws her attention. For a reason she doesn't understand she blurs the windowpane with another spray of cleaning fluid.
 
 
@@ -3338,7 +3285,7 @@ sparkling clean.{\textquotedbl}
 {\textquotedbl}Not quite,{\textquotedbl} Rimat says. She rubs the window clear again and looks out. 
 
 {\textquotedbl}Enough, enough,{\textquotedbl} says Dela. {\textquotedbl}You haven't had your coffee yet.
-And\textcolor{red}{\ }I want to drink mine with you.{\textquotedbl} 
+And{\ }I want to drink mine with you.{\textquotedbl} 
 
 {\textquotedbl}In a minute{}-{\textquotedbl} Rimat lowers the venetian blind leaving the slats horizontal and then goes
 to heat the coffee pot.
@@ -3373,9 +3320,9 @@ Afterwards we'll think about where to donate them. We'll do\ this\ every year, r
 
 {\textquotedbl}Every year, every year,{\textquotedbl} Rimat responds enthusiastically. She knows there's no point
 asking~Dela whether Zakod has hired a new laborer. She's come to understand that from the very beginning of their life
-together Zakod has never shared with his wife his interests, activities and decisions\textcolor{red}{. }She certainly
-won't\textcolor{red}{\ }ask Zakod herself. Maybe it was a passer-by who chanced upon Glin in the distant field and
-stopped there to exchange a word or two, and they decided to sit under the\textcolor{red}{\ }leafy old fig tree.~\ She
+together Zakod has never shared with his wife his interests, activities and decisions{. }She certainly
+won't{\ }ask Zakod herself. Maybe it was a passer-by who chanced upon Glin in the distant field and
+stopped there to exchange a word or two, and they decided to sit under the{\ }leafy old fig tree.~\ She
 returns to the window and widens the gap between two slats of the venetian blind. ~The scene that worried her has
 disappeared. 
 
@@ -3499,7 +3446,7 @@ Nonstop -{\textquotedbl}
 {\textquotedbl}Yes,{\textquotedbl} Shouba whispers. What could have resurrected that horrific scene in his friend's
 mind?\ \ {}``Yes, I\ was\ there.{\textquotedbl}
 
-Alir~shakes his head, {\textquotedbl}I don't remember seeing you there.\textcolor{red}{\ }I was so horrified by Rimat's
+Alir~shakes his head, {\textquotedbl}I don't remember seeing you there.{\ }I was so horrified by Rimat's
 screams that\ I...\ I simply{\dots} Ran away. Only after Rimat had left with the baby to go to that village up north
 did I return to pick up my notebook and a few odds and ends I'd left behind.{\textquotedbl}
 
@@ -3553,7 +3500,7 @@ years have passed between~Saffia's tragedy and this poem -{\textquotedbl}\ he sa
 we feel about things. Rimat is right. People could take the last line as a kind of incitement... For doing terrible
 things -{\textquotedbl} 
 
-Shouba doesn't feel qualified to enter into a discussion about poetry and its\textcolor{red}{\ }ramifications.\  ``Look,
+Shouba doesn't feel qualified to enter into a discussion about poetry and its{\ }ramifications.\  ``Look,
 Alir,{\textquotedbl} he tries to explain, {\textquotedbl}Rimat blames each and every one of us for what happened to
 Saffia. She screamed at me then, 'What kind of rotten bomb-timers did you concoct?' And I know -- I'm sure! - that they
 were perfect. Saffia and I tested them countless times, went through the whole process again and again. ~She also
@@ -3677,7 +3624,7 @@ befalls a close friend, a catastrophe no one can avert.
 
 {\textquotedbl}In a {}'Letter To The Editor{}' in the newspaper he explained the reason: so\ they`d be given their day
 in court. A fair trial and not a public lynch. I understood his line of thinking. Still, it was weird. Rather going to
-the other extreme, don't you think?\textcolor[rgb]{0.0,0.6901961,0.3137255}{\ \ }In the end they were acquitted because
+the other extreme, don't you think?{\ \ }In the end they were acquitted because
 of `a shadow of doubt'. Everybody knew they'd done it.{\textquotedbl}
 
 There's a knock at the door. Shouba opens it. The skinny young Balad standing in the doorway is familiar to him from
@@ -3751,7 +3698,7 @@ There's still time.
 
 {\textquotedbl}Come in, Alir, come in -- {\textquotedbl} Bonimi recognizes the timid knock at the~door. He stands up to
 welcome the overgrown boy who enters his room hesitantly\ as usual. Despite their shared living quarters way back in
-the past - feet-to-feet in the\ glassed-in veranda~at Saffia and Rimat's\textcolor{red}{\ }{}- he never really got to
+the past - feet-to-feet in the\ glassed-in veranda~at Saffia and Rimat's{\ }{}- he never really got to
 know him. At the time he was only aware of Rimat being nice to him, and mainly of his older brother's deep affection
 for him. Lately he has come to feel his own growing warmth towards this disarming poet. 
 
@@ -3823,7 +3770,7 @@ Bonimi is thunderstruck. {\textquotedbl}When? Where?{\textquotedbl}
 {\textquotedbl}Just like that?{\textquotedbl} 
 
 {\textquotedbl}She came to speak to me about the third line. She said these kinds of words were the cause of Saffia's
-tragedy. That he was carried away by this~kind of\textcolor{red}{\ }rhetorics. She was wild{\dots} And I promised her
+tragedy. That he was carried away by this~kind of{\ }rhetorics. She was wild{\dots} And I promised her
 I'd change it. In public. It haunts me.{\textquotedbl} 
 
 {\textquotedbl}What else did she say?{\textquotedbl} 
@@ -3879,7 +3826,7 @@ now is the time to practice the technique of communicating with Yamik. He puts o
 mike plugged into his Walkman, {\textquotedbl}Yamik, can you hear me?{\textquotedbl} He lengthens the antenna.
 {\textquotedbl}Yamik, can you hear me \textit{now}?{\textquotedbl} He changes the angle of the antenna.
 
-The door above opens and mom is coming downstairs. He disconnects the mike and collapses\textcolor{red}{\ }the antenna.
+The door above opens and mom is coming downstairs. He disconnects the mike and collapses{\ }the antenna.
 Eyes closed, Walkman on his chest, he stretches out on his bed.\ 
 
 Rimat, now in her room, opens the wardrobe, takes out one of her dresses and drapes it over her arm. She then\ crosses
@@ -3970,9 +3917,9 @@ The connection is cut off. He and Yamik must meet again. Yamik needs another pra
 
 {\textquotedbl}Home, sir?{\textquotedbl} asks the~chauffeur. 
 
-{\textquotedbl}Home indeed,{\textquotedbl} the CEO answers. The darkness inside\textcolor{red}{\ }the limo's back seat,
+{\textquotedbl}Home indeed,{\textquotedbl} the CEO answers. The darkness inside{\ }the limo's back seat,
 the routine question and answer between him and the chauffeur, the even hum of the motor -- all these give Bonimi a
-sense of peace he yearns for during the hectic hours in the TV building and the\textcolor{red}{\ }bleak solitude when
+sense of peace he yearns for during the hectic hours in the TV building and the{\ }bleak solitude when
 at home. He knows that once the limo merges with the traffic~the chauffeur will comment on something in the news, the
 results of the last poll, whatever.\ \ The words will filter into his ears as if through a thick blanket. He pats his
 scar lightly.
@@ -3992,7 +3939,7 @@ the car and take a short walk. They're going to put up a municipal information c
 short.{\textquotedbl} 
 
 {\textquotedbl}About time, isn't it -{}'' Bonimi says in good humor while he's tormented by the knowledge that he won't
-be able to take his walks there anymore.\ \textcolor{red}{\ }
+be able to take his walks there anymore.\ {\ }
 
 {\textquotedbl}Especially its being so close to the Citadel. It's always so crowded with sightseers and tourists around
 there. They've put on~an exhibit there of old weaponry. I went to see it with some relatives here on a visit. They were
@@ -4008,14 +3955,14 @@ brother whispers. He whispers back, 'I brought you the pump, Big-Saff.' And Saff
 down. 'I'm staying here with you, 'Big-Saff,' he says, and Saffia says, 'No way. L'il-Saff~still needs his sleep. He's
 a growing boy.'\ \ {}'No. Big-Saff needs L'il-Saff's help,' he says. He grabs~the~bike's handlebars. Saffia pushes him
 aside. He tries again but Saffia whams him out of the way. Saffia has never hit him like that. He falls face down on
-something sharp. His left cheek\textcolor{red}{\ }is bleeding. An excruciating pain paralyzes him for a moment. 'So
+something sharp. His left cheek{\ }is bleeding. An excruciating pain paralyzes him for a moment. 'So
 very{}-very sorry, L'il-Saff,' Saffia apologizes as he sprints off~with the loaded bike towards the Citadel.\ He tells
 himself it's going to be all right. Weren't those bomb-timers made by his brother's close friend Shouba? But in a few a
 minutes there's an explosion. And then another one and another one. Why so soon? A huge flame shoots into the air,
 smoke all around. There's nothing he can do about the pain in his left cheek. He gets up and runs, runs, runs. Suddenly
 his foot hits the bike thrown down on the road. He runs some more. And there lies Saffia. He bends over him, whispers
 to him. But Saffia doesn't respond. Somewhere inside he knows that Saffia is dead. With a huge effort he manages to
-roll the body into a ditch. His blood and his brother's mingle\textcolor{red}{. }He covers the dead body with stones
+roll the body into a ditch. His blood and his brother's mingle{. }He covers the dead body with stones
 and rubble. Why? He covers it with\ earth. Why? Because he's afraid. ~Afraid of what will be said about Saffia, about
 what he did. Afraid of what'll happen to \textit{him} because of it. He runs back home. Some of Saffia's buddies are
 already there. Rimat's standing in the middle of the room half-dressed, hair flying, hysterical, the baby in her arms.
@@ -4029,7 +3976,7 @@ The chauffeur decelerates, {\textquotedbl}Here, sir --{\textquotedbl} he{}' poin
 {\textquotedbl}This is where they're putting up The Municipal Information Center. MIC for short.{\textquotedbl} 
 
 {\textquotedbl}I see.{\textquotedbl} He looks out. The new structure is covered with scaffolding and nettings.
-It\textcolor{red}{\ }clearly promises to be an impressive building.\ He{}'s again assuaged by pain. Once they start
+It{\ }clearly promises to be an impressive building.\ He{}'s again assuaged by pain. Once they start
 working on that building he'll\ no longer be able to take his walks in the\ area. 
 
 They drive on in silence until the chauffeur exclaims, {\textquotedbl}What a long line in front of the
@@ -4156,7 +4103,7 @@ main idea was to please Aera and prove his commitment to the Balad ideal of the 
 
 {\textquotedbl}What's there to worry about? I described it all to her in my letter, that the way it's planned,
 they\ \ \ wouldn't want to suffer any damage, any injuries, any casualties.{\textquotedbl} As he's talking Glin
-wonders, am I no longer \textit{one of them}?\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }He has never given~this a
+wonders, am I no longer \textit{one of them}?{\ }He has never given~this a
 thought. Who are those with whom he's '\textit{We}{}'? Who are those who are '\textit{They}{}'? Being bonded with Aera
 body and soul has nothing to do with it. It's only since he got to know Yamik and what ensued from that
 acquaintanceship that these questions sometimes surface to trouble him. To prevent his being sucked into an abyss, he
@@ -4251,7 +4198,7 @@ she remembers what Yamik said after first meeting Glin on~the street opposite th
 to bottom as if searching for you, as if I'm hiding you somewhere -- ' She almost broke down then. Summoning all her
 strength she barely managed to utter a dull 'Ah --' 
 
-Mother comes to the window to invite the young couple to the table. Looking outside she\textcolor{red}{\ }takes in the
+Mother comes to the window to invite the young couple to the table. Looking outside she{\ }takes in the
 easy flow of conversation between the two of them. Let them be. Her heart at ease she returns to the cooker.
 
 {\textquotedbl}What's the good word?{\textquotedbl} Yamik pats Aera's belly. 
@@ -4338,7 +4285,7 @@ that you've told him all about it.{\textquotedbl}
 {\textquotedbl}He would be a hazard.{\textquotedbl}
 
 {\textquotedbl}He's with us all the way,{\textquotedbl} Yamik says, and hesitates a bit before going
-on,\textcolor{red}{\ }{\textquotedbl}for you, he tells me,~the sky's the limit. Pale Blue Valley is the limit.''
+on,{\ }{\textquotedbl}for you, he tells me,~the sky's the limit. Pale Blue Valley is the limit.''
 
 They hold each other's gaze for a moment.
 
@@ -4353,7 +4300,7 @@ it be dangerous?{\textquotedbl}
 
 {\textquotedbl}No,{\textquotedbl} Yamik says, though he doesn't sound too convincing. 
 
-{\textquotedbl}And if they get wise\textcolor{red}{\ }to it? Find out?{\textquotedbl} 
+{\textquotedbl}And if they get wise{\ }to it? Find out?{\textquotedbl} 
 
 {\textquotedbl}They won't.{\textquotedbl}\ \ 
 
@@ -4405,7 +4352,7 @@ stupidity and short-sightedness.{\textquotedbl}
 
 {\textquotedbl}Loads of thanks, auntie.{\textquotedbl} They exchange kisses. 
 
-He goes out\textcolor{red}{\ }to Aera for their farewell. {\textquotedbl}Don't forget to eat and drink for our
+He goes out{\ }to Aera for their farewell. {\textquotedbl}Don't forget to eat and drink for our
 baby!{\textquotedbl} he tells her. Then his voice becomes serious, {\textquotedbl}Aera --?{\textquotedbl}
 
 {\textquotedbl}What is it?{\textquotedbl} Aera is all ears.
@@ -4481,7 +4428,7 @@ demands of him.\
 
 {\textquotedbl}Well, that is a relief. I worried for nothing. You look tired out.{\textquotedbl} 
 
-Glin pours himself a glass of lemonade from Zakod's thermos. He\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }slakes his
+Glin pours himself a glass of lemonade from Zakod's thermos. He{\ }slakes his
 thirst in one gulp. Refreshed, he perches on the edge of the desk, feet dangling. 
 
 {}``If that is the case,'' Zakod continues, ``maybe there are other sprinklers that need replacing.{\textquotedbl} 
@@ -4506,7 +4453,7 @@ ninety-nine percent made up of chemical processes and impulses, but one percent 
 percent is what enables us to make rational choices.{\textquotedbl} 
 
 {\textquotedbl}Isn't that a chemical process too?{\textquotedbl} Glin
-asks\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }feigning earnestness. 
+asks{\ }feigning earnestness. 
 
 {\textquotedbl}It is, but of a different nature.'' 
 
@@ -4526,7 +4473,7 @@ promised mom to take in the laundry before it gets dark.{\textquotedbl}
 
 As he's almost at the door Zakod speaks: {\textquotedbl}I once had that kind of disagreement with a very dear friend.
 The situation was different. The considerations were different. But the principle was the same. I carried on until I
-stopped. I simply\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }grew tired.{\textquotedbl} 
+stopped. I simply{\ }grew tired.{\textquotedbl} 
 
 {\textquotedbl}And what happened then?{\textquotedbl} Glin asks. 
 
@@ -4534,7 +4481,7 @@ Heavy gloom descends on Zakod.\ \ Saffia's image looms before his eyes. His voic
 in a tragedy.{\textquotedbl} 
 
 Glin scrutinizes Zakod's face that looks lost in thought. {\textquotedbl}Why
-should\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }I have to pay for a precedent?{\textquotedbl} he asks almost in a
+should{\ }I have to pay for a precedent?{\textquotedbl} he asks almost in a
 whisper.
 
 ~
@@ -4545,7 +4492,7 @@ Aera opens the door and shades her eyes against the sun. Whose footsteps are the
 
 {\textquotedbl}Oh! If it's not our good friend Gidal!{\textquotedbl} She welcomes him happily. {\textquotedbl}What a
 lovely surprise!{\textquotedbl} She steps down and goes over to the
-cradle~under\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }the tree. 
+cradle~under{\ }the tree. 
 
 {\textquotedbl}Good day,{\textquotedbl} Gidal responds as he gets nearer, {\textquotedbl}I haven't congratulated you yet
 -{\textquotedbl} 
@@ -4575,12 +4522,12 @@ some unknown reason to himself, timed his visit to-day to find Aera alone.
 gift to buy for a baby.{\textquotedbl}\ 
 
 {\textquotedbl}You brought him the best gift of all. He shares with me whatever I eat and drink. You're so good. You
-made it possible\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }for us to work in the village. You arranged for us~to live
+made it possible{\ }for us to work in the village. You arranged for us~to live
 in this~shack after renovating it yourself. And now you've brought us this sweet honey.{\textquotedbl} 
 
-{\textquotedbl}Your Mother told me that you'd given\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }birth to a baby
+{\textquotedbl}Your Mother told me that you'd given{\ }birth to a baby
 boy.{\textquotedbl} At the time he'd been struck by the woman's unbound joy at sharing the good news with him {}- as
-though not troubled by the infant's\textcolor{red}{\ }unknown paternity. {\textquotedbl}What's his
+though not troubled by the infant's{\ }unknown paternity. {\textquotedbl}What's his
 name?{\textquotedbl}\ 
 
 {\textquotedbl}He doesn't have one yet. He's waiting for his father to come home so we can find a name for him together.
@@ -4590,14 +4537,14 @@ Gidal is flabbergasted. Does she mean to spell out the identity of the father as
 tension he says, {\textquotedbl}Baby is smiling in his sleep.{\textquotedbl} ~
 
 {\textquotedbl}Baby{}'s dreaming sweet dreams. Please sit down,{\textquotedbl} Aera\ motions to the bench
-outside\textcolor[rgb]{0.0,0.4392157,0.7529412}{.} {\textquotedbl}It's so comfortable. Wasn't it made by your own
+outside{.} {\textquotedbl}It's so comfortable. Wasn't it made by your own
 golden hands? I'll treat you to a cup of tea plus something else to go with it.{\textquotedbl} She hurries inside. 
 
 Gidal calls after her, {\textquotedbl}Please don't bother!{\textquotedbl}
 
 {\textquotedbl}I'll\ join you,{\textquotedbl} Aera calls back. {\textquotedbl}I need to drink too - Baby's orders. We'll
 have a tea-party!{\textquotedbl} She soon emerges carrying a tray with two cups of tea and a plateful of cookies.
-{\textquotedbl}We'll sweeten the tea with your honey,{\textquotedbl}\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }she
+{\textquotedbl}We'll sweeten the tea with your honey,{\textquotedbl}{\ }she
 places the tray on a small stool. They enjoy the aromatic brew and the home-made cookies together. {\textquotedbl}Isn't
 this great?{\textquotedbl} Aera says brightly. 
 
@@ -4606,20 +4553,20 @@ Gidal nods in agreement.
 Aera is\ wondering - this man who was born so good-hearted, was also born to be alone?
 
 Baby whimpers. Aera takes him out of his cradle, seats herself on the doorstep, covers herself
-discreetly\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }with a corner of the bed sheet of pale blue flower and~begins to
+discreetly{\ }with a corner of the bed sheet of pale blue flower and~begins to
 nurse him. 
 
-Gidal, watching, is awash with emotions\textcolor{red}{\ }he's only once before experienced - when Rimat nursed baby
+Gidal, watching, is awash with emotions{\ }he's only once before experienced - when Rimat nursed baby
 Glin that day when they had first arrived. He's timed his visit well to be alone with mother and Baby. He returns his
 empty cup to the tray and goes over to the cradle. {\textquotedbl}A nice old cradle,{\textquotedbl} he
-observes\textcolor[rgb]{0.0,0.4392157,0.7529412}{.}
+observes{.}
 
 {\textquotedbl}I picked it up at the flea market for next to nothing,{\textquotedbl} Aera tells
-him\textcolor[rgb]{0.0,0.4392157,0.7529412}{.}
+him{.}
 
 How could that be, Gidal wonders. The history of the cradle is indelibly inscribed in his memory. A short time before
 Rimat was going to give birth, Saffia had come by it in lieu of reimbursement for a plastering
-job\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }he'd done. Rimat had cleaned it inside out~and fashioned a mattress for
+job{\ }he'd done. Rimat had cleaned it inside out~and fashioned a mattress for
 it from an old pillow. And then Glin was born and was put into this cradle.\ And a short time later he{}'d\ replaced
 the cradle's frayed handles with new ones. How well he remembers Rimat and Saffia's appreciation. No less unforgettable
 was how Alir - the Saffias' homeless poet friend who shared the\ glassed-in veranda with Saffia's young brother Boni -
@@ -4629,7 +4576,7 @@ there was a woman with a baby at the gate asking for him. And the woman was Rima
 in one hand, her other hand gripping a suitcase and two bags, Saffia's violin case slung on her shoulder. And in time
 Glin outgrew the cradle and Rimat turned it into a sewing basket which he saw whenever he came by to visit. And not
 long ago Rimat told him the cradle would be one of the things she and Glin wouldn{}'t be taking along with them when
-they{}'d leave the village to move to Zakod's \textcolor[rgb]{0.0,0.4392157,0.7529412}{{}--}\ being encumbered with so
+they{}'d leave the village to move to Zakod's {{}--}\ being encumbered with so
 much\ luggage as they are. So how did the cradle find its way to the flea market for Aera to come by it?
 
 {\textquotedbl}What would you say if I got hold of four wheels on a metal frame and fixed the cradle inside it? And then
@@ -4653,12 +4600,12 @@ like to see more of you!{\textquotedbl}
 ~31 
 
 {\textquotedbl}Next to a throwing hand - let my arm wither.'' Does it sound right? Alir tears up the~piece of paper he'd
-jotted these words on\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }and tosses the scraps behind him. Another failed
+jotted these words on{\ }and tosses the scraps behind him. Another failed
 attempt.  A poem about his present predicament begins to congeal inside him as the scraps of paper pile up like a mound
 of snow. But he resists the temptation and once again confronts the challenge. He writes down, {\textquotedbl}Next to a
 throwing hand - who am I?{\textquotedbl} This scrap of paper immediately joins the heap. The same with
 {\textquotedbl}Next to a throwing hand - my hand isn't mine.{\textquotedbl} He then
-simply\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }writes, {\textquotedbl}Next to a throwing hand -{\textquotedbl} He
+simply{\ }writes, {\textquotedbl}Next to a throwing hand -{\textquotedbl} He
 contemplates these words. Can that remain as is? Leave the dash?\ \ Replace it with three dots? With a question mark?
 An exclamation mark? Add both? No good. 
 
@@ -4671,7 +4618,7 @@ my intention is to incite it. No. A thousand times~NO.\ \ Nothing could be furth
 fundamental, spiritual and ethical credo\ \textit{more}. I've tried to correct this line, believe me. Again and again.
 And I have not found the right words. Please let me explain myself. {\textquotedbl}Next to a throwing hand, I'm the
 grenade --{\textquotedbl} When a despicable, base, vile, criminal individual throws a grenade, I too become base,
-despicable\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }and vile. I too become a criminal. Rimat, do you hear me? Do you
+despicable{\ }and vile. I too become a criminal. Rimat, do you hear me? Do you
 understand me?
 
 ~
@@ -4697,11 +4644,11 @@ stiff about you -{\textquotedbl}
 {\textquotedbl}No.{\textquotedbl} 
 
 {\textquotedbl}A bus was ambushed. Two killed, fifteen injured - three seriously.{\textquotedbl} Since he was a teenager
-she's stuck to her resolution never\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }to ask about his
-free\textcolor[rgb]{0.0,0.4392157,0.7529412}{{}-}time diversions, but tonight she can't help it.
+she's stuck to her resolution never{\ }to ask about his
+free{{}-}time diversions, but tonight she can't help it.
 {\textquotedbl}\textit{Where were you}?{\textquotedbl} 
 
-{\textquotedbl}I took in a movie. A stupid\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }comedy but OK in
+{\textquotedbl}I took in a movie. A stupid{\ }comedy but OK in
 parts.{\textquotedbl} 
 
 {\textquotedbl}And only \textit{now} you got home?{\textquotedbl} ~
@@ -4745,7 +4692,7 @@ mother is satisfied. With a bit of\ luck\ she'll go back to sleep now.
 
 Glin is worried. Why has she suddenly become so inquisitive? So suspicious? But he keeps up the patter,
 {\textquotedbl}Music didn't use to be one of your priorities. Now, I gather, it has -{\textquotedbl} Glin yawns
-loudly\textcolor[rgb]{0.0,0.4392157,0.7529412}{,} {\textquotedbl}Nighty-night, mom -{\textquotedbl} 
+loudly{,} {\textquotedbl}Nighty-night, mom -{\textquotedbl} 
 
 {\textquotedbl}Ditto, son -{\textquotedbl}
 
@@ -4753,8 +4700,8 @@ Glin waits. Mom stretches on her bed, turns over once, twice. Finally\ she breat
 tiptoes to the door between their rooms to check. Yes, she's fast asleep. After closing the door between their rooms
 as~quietly as possible he takes off his thick overcoat and woolen sweater. Waiting for Yamik for so many hours outside
 in the cold he thought he'd freeze\ despite their protection. He switches on the bedside lamp and then opens the window
-and the shutter as quietly as possible. How fortunate that h\textcolor[rgb]{0.0,0.4392157,0.7529412}{e}{}'d
-taken\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }Yamik's wise advice to oil the hinges beforehand!
+and the shutter as quietly as possible. How fortunate that h{e}{}'d
+taken{\ }Yamik's wise advice to oil the hinges beforehand!
 
  {\textquotedbl}Yamik --{\textquotedbl} he whispers.
 
@@ -4774,7 +4721,7 @@ in my own pad?{\textquotedbl}
 Yamik takes off his muddy boots and sits on the edge of the bed. 
 
 {\textquotedbl}Feel better now?{\textquotedbl} Glin asks him. Yamik shakes his
-head.\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }{\textquotedbl}I thought you got used to it -{\textquotedbl} 
+head.{\ }{\textquotedbl}I thought you got used to it -{\textquotedbl} 
 
 {\textquotedbl}There was time in the past when I got used to it. But now it's like starting all over
 again.{\textquotedbl} 
@@ -4784,8 +4731,8 @@ says.
 
 {\textquotedbl}I also used to think that way,'' says Yamik. ``Well it doesn't - not with me anyway{\dots} Damn this
 operation that went wrong,{\textquotedbl} he hisses, then adds after a brief pause,{\textquotedbl} I wasn't too near
-the shooting, but when it suddenly\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }broke out I
-just\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }wanted to get the hell out of there. Except that once I saw what was
+the shooting, but when it suddenly{\ }broke out I
+just{\ }wanted to get the hell out of there. Except that once I saw what was
 happening to my friends I couldn't \textit{not} shoot.{\textquotedbl} 
 
 Glin shuts his eyes. Multicolored spheres collide with each other under his eyelids. {\textquotedbl}I'd do the same for
@@ -4945,7 +4892,7 @@ time?{\textquotedbl}
 called Equipment\ For\ Survival. EFS for\ short.''\ 
 
 {}``Please, Zakod,''\ Rimat~implores, ``please{\dots} no lecture now -'' She feels his hand enclosing hers. There has
-never been such physical\ closeness\textcolor{red}{\ }between them. Now it{}'s vital to her so that she can ask,
+never been such physical\ closeness{\ }between them. Now it{}'s vital to her so that she can ask,
 ``What's\ going to happen to him now?''\ 
 
 Zakod is quick to respond: {\textquotedbl}He has a very good chance of getting out\ of it unscathed even though he has
@@ -4980,7 +4927,7 @@ official. ``May I close my eyes for a bit?'' she asks.\
 
 {}``Yes.''\ 
 
-{}``Did you give her\textcolor{red}{\ }her\ lunch?''\ 
+{}``Did you give her{\ }her\ lunch?''\ 
 
 {}``Yes.''\ 
 
@@ -4992,8 +4939,8 @@ loves both of you so very much. She loves to depend on you, Rimat.{}''
 And I love to take care of her, Rimat thinks to herself. But everything\ has now lost its meaning because of what Glin
 did. He betrayed her. And he\ removed himself from her physical protection.
 
-When\textcolor{red}{\ }Zakod\ had rushed down at the sound of Rimat{}'s cry\ and\ read\ the letter clasped in her hand
-he immediately understood what had happened.\ Right there and then he had decided\textcolor{red}{\ }not\ to share with
+When{\ }Zakod\ had rushed down at the sound of Rimat{}'s cry\ and\ read\ the letter clasped in her hand
+he immediately understood what had happened.\ Right there and then he had decided{\ }not\ to share with
 Rimat his having been privy to Glin{}'s conflict between remaining a~conscientious objector or enlisting in the
 army.\ If he would share this knowledge with her, she would most assuredly pounce on him, saying that just as he\ had
 sinfully refrained from stopping the father in the\ past to go ahead with those cursed bombs, so has he
@@ -5011,7 +4958,7 @@ Glin.{}'\ These words will keep throbbing in her ears forever. Until she{}'s don
 Coming home after seeing off the men who had dropped in Mother finds Aera still stretched inert on the bed. She clears
 the table. How ravenous they were! How thirsty! She was so happy to offer them food and drink. She must carry on with
 life, go on working in the village for the sustenance of her daughter and Baby\textbf{\ }and herself, and here at home
-she must continue with housework.\textcolor{red}{\ }But above all she'll continue to worry about Aera. Why has her
+she must continue with housework.{\ }But above all she'll continue to worry about Aera. Why has her
 daughter become so distant? She never imagined this could happen. ~Their shared feelings and worries should have
 strengthened the bond between them. What has come over the~only child - one out of the five - who survived? The perfect
 daughter she has always been? What is it that's~gnawing at her heart? ~Aera shows no interest in the flower bed she has
@@ -5020,7 +4967,7 @@ cares for, feels for, talks to, sings to.\
 
 Aera finally gets up and goes to have a look at Baby. He's sound asleep. She should help mother. She takes the broom and
 sweeps out the dried mud left from the men's boots. She can't stop thinking about that old photo that was stuck
-to\textcolor{red}{\ }the underside of the cradle's mattress. She'd hidden it at the very back of her drawer. She
+to{\ }the underside of the cradle's mattress. She'd hidden it at the very back of her drawer. She
 mustn't forget to take it out and show it to Glin. Let that day come sooner than soon. 
 
 Mother is cheered at her daughter's sudden display of activity. {\textquotedbl}I walked with the men all the way to the
@@ -5052,7 +4999,7 @@ his,{}'' she says, ``Yamik's too. Separate and mixed together.{\textquotedbl}
 
 Aera says, {\textquotedbl}I see many faces in his face -{\textquotedbl}~ 
 
-Mother thinks, it's been so long since Aera expressed such\textcolor{red}{\ }pleasant words.\ {\textquotedbl}That good
+Mother thinks, it's been so long since Aera expressed such{\ }pleasant words.\ {\textquotedbl}That good
 man from the village fixed excellent metal frame with wheels for the cradle,{\textquotedbl} she says,
 {\textquotedbl}Baby has a real baby carriage now. 'Golden-Hands-Gidal' they call him there - and rightly
 so.{\textquotedbl} 
@@ -5132,7 +5079,7 @@ crying. {\textquotedbl}Mother darling, Shhhh --{\textquotedbl}
 Janha,~pen and pad in hand, sits facing the CEO ready to take notes.\ 
 
 {\textquotedbl}I'd like to extend the meeting with the Selected Recruits by another half-hour,'' he says,
-{\textquotedbl}one half-hour meeting is almost pointless.{\textquotedbl}\textcolor{red}{\ }
+{\textquotedbl}one half-hour meeting is almost pointless.{\textquotedbl}{\ }
 
 Ezlip, sitting next to the CEO, objects, {\textquotedbl}You mean to spend another half{}-hour on that?{\textquotedbl}
 
@@ -5143,7 +5090,7 @@ these wonderful guys,{\textquotedbl} he explains to him with his natural smile a
 {\textquotedbl}Thank you, sir,'' says Janha jotting down the CEO's request, ``and may I add --{\textquotedbl} 
 
 {\textquotedbl}Don't bother with the 'may I',{\textquotedbl} the CEO\ prompts her amicably,\ {\textquotedbl}I{}'ll\ take
-it\textcolor{red}{\ }as an order -{\textquotedbl}\ 
+it{\ }as an order -{\textquotedbl}\ 
 
 {\textquotedbl}I heard that this tour provided for the Selected Recruits is going down very well with
 them,{\textquotedbl} the secretary says, {\textquotedbl}and I also heard that there'll be a column about it in the
@@ -5153,7 +5100,7 @@ press accrediting you with the idea.{\textquotedbl}
 
 When he initiated these tours for outstanding recruits in the television building ending with their meeting with him, he
 asked that each\ recruit have his name affixed to his lapel and that a list of their names be given to him in advance.
-He did all that in the hope that this might  happen - and\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }it did! The name
+He did all that in the hope that this might  happen - and{\ }it did! The name
 of ~~{}'Saffia, Glin' shrieks at him from the list!\ 
 
 {\textquotedbl}I'll have to notify security about lengthening the meeting,{\textquotedbl} Ezlip heaves a theatrical
@@ -5211,8 +5158,8 @@ his heroic brother will win him quite a few votes.
 {\textquotedbl}Rimat, there is a big surprise for us in the papers today!{\textquotedbl}
 
 These kind of remarks made by Zakod sitting in his armchair in the living room to her in the kitchen always irritate
-her. They break her stream of inner thoughts. \textcolor[rgb]{0.30980393,0.5058824,0.7411765}{\ }How many times does
-she have to explain\textcolor[rgb]{0.0,0.6901961,0.9411765}{\ }to him that the fact that she's busy with housework
+her. They break her stream of inner thoughts. {\ }How many times does
+she have to explain{\ }to him that the fact that she's busy with housework
 doesn't mean her mind is free for all? But in vain. 
 
 {\textquotedbl}There is a write-up here about that big inauguration ceremony in honor of the renovated auditorium in the
@@ -5236,7 +5183,7 @@ Zakod goes back to his newspaper.
 
 {\textquotedbl}I'm going to go to that event,{\textquotedbl} she informs Zakod. She doesn't reveal her reason - to
 actually be in the audience and make sure with her own eyes and ears whether Alir keeps  the promise\ he made 
-her.\textcolor[rgb]{0.0,0.6901961,0.9411765}{\ }
+her.{\ }
 
 Zakod is taken aback. {\textquotedbl}I would never guess that you would go for such nonsense,{\textquotedbl} he says.
 
@@ -5250,9 +5197,9 @@ Zakod is taken aback. {\textquotedbl}I would never guess that you would go for s
 back. And do not start protesting. You should not be alone on the roads at night. ~Especially so since this grand
 splash might end in an ungodly\ hour - if at all.{\textquotedbl}~ Zakod now comes into the kitchen, newspaper in hand,
 and sits down at the table. He continues to talk to Rimat's back while she now washes the carrots and cuts them into
-rings. {\textquotedbl}Saffia and Boni were so close.  How devoted they were to each other\textcolor{red}{.}\ \ The
+rings. {\textquotedbl}Saffia and Boni were so close.  How devoted they were to each other{.}\ \ The
 nicknames they used to call each other -- 'Big-Saff' and 'Li'l-Saff'. They were not at all alike - neither physically,
-nor mentally. But one trait they shared -~\textcolor[rgb]{0.0,0.6901961,0.9411765}{\ }their genuine feelings for their
+nor mentally. But one trait they shared -~{\ }their genuine feelings for their
 fellow men. Yes. I am quite sure that it was for old-times-sake that Boni asked Alir to emcee~this hullabaloo. It is
 also a brilliant idea. As far as I remember, Alir cannot but be authentic, disarming, spontaneous. He will charm and
 impress them all. Did you happen to come across the poem he wrote about the Balads?{\textquotedbl}
@@ -5280,18 +5227,18 @@ manner. {\textquotedbl}The first line -- 'Next to a human being, I'm a human bei
 of identification that any individual can feel with his fellow man on the simplest, most basic level. The second line
 -- 'Next to a Balad, I'm a Balad{}' -- here we are on the level of a specific human predicament that is so very well
 known to us. But it has to be understood that the 'Balad{}' in the context of the poem does not only represent a Balad
-who lives among us, but also the Balad Experience, capitals B and E.{\textquotedbl}\textcolor{red}{\ }
+who lives among us, but also the Balad Experience, capitals B and E.{\textquotedbl}{\ }
 
 {}``What does that mean?{\textquotedbl} 
 
 {\textquotedbl}It is about being a displaced, homeless individual, being at the mercy of others. And the third, final
 line, 'Next to a throwing hand, I'm the grenade'--has to do with a basic ethical issue. That when something base,
 despicable, horrible, happens in the world, like it or not, we all have a share in
-it.{\textquotedbl}\textcolor[rgb]{0.0,0.6901961,0.9411765}{\ }
+it.{\textquotedbl}{\ }
 
 Could that have been Alir's line of thinking?\ \ Rimat wonders.\ \ A line of thinking that I was blind and deaf to? And
 when I came to have it out with him, he couldn't explain it to me because he felt like a frightened little schoolboy in
-an oral exam? She turns to\textcolor[rgb]{0.0,0.6901961,0.9411765}{\ }Zakod, {\textquotedbl}But most people understand
+an oral exam? She turns to{\ }Zakod, {\textquotedbl}But most people understand
 it quite differently.{\textquotedbl} 
 
 {\textquotedbl}Minds of most people are~limited. It is a most unfortunate fact.{\textquotedbl} 
@@ -5306,7 +5253,7 @@ Rimat comes to sit down at the table facing him. His explanation is beginning to
 must go up to Alir and admit to her misunderstanding and apologize for her preposterous demand of him. This strengthens
 her wish to be there in person.\ \ 
 
-{\textquotedbl}It was most\ thoughtful of Glin to ask about Dela and\textcolor{red}{\ }myself\ and convey to us his
+{\textquotedbl}It was most\ thoughtful of Glin to ask about Dela and{\ }myself\ and convey to us his
 warmest regards,{\textquotedbl} Zakod says. {\textquotedbl}Please convey to him our warmest regards.{\textquotedbl}
 
 {\textquotedbl}I certainly will,{\textquotedbl} Rimat responds. Since it's Zakod who brings in the mail from the mailbox
@@ -5333,9 +5280,9 @@ that I had woken you up. I apologized and said that I came to speak with Saffia.
 asked, 'For work?' You said so very curtly, 'Yes'.{\textquotedbl} 
 
 {\textquotedbl}I only wanted to get rid of you\ at that moment,{\textquotedbl} Rimat immediately recollects.
-{\textquotedbl}I was bursting with milk. Pure agony. ~After you left I picked Glin up, nursed\textcolor{red}{\ }him and
+{\textquotedbl}I was bursting with milk. Pure agony. ~After you left I picked Glin up, nursed{\ }him and
 then laid him next to me in bed. We dozed off together. And then it hit me - why had Saffia left so early without
-telling me? When it was still dark? Then it dawned\textcolor{red}{\ }on me. I went crazy, ran out to the veranda
+telling me? When it was still dark? Then it dawned{\ }on me. I went crazy, ran out to the veranda
 yelling - 'Boni!\ Saffia's gone out! Did you give him the pump? Did you?' And Boni woke up instantly, pulled the
 precious pump from under his bed and rushed out with it. I went back to Glin, covered both of us with a blanket and
 mumbled, 'No-no-no'. I thought that if I kept on mumbling 'no', it wouldn't happen. But then there was a huge
@@ -5343,8 +5290,8 @@ explosion. And then another and another. And everything started to shake.\ \ Sir
 suddenly Shouba appeared. And I let out a scream that has never stopped\ {}--{\textquotedbl}
 
 Zakod waits a minute and then says quietly, {\textquotedbl}That night, when I came over to your
-place,\textcolor{red}{\ }it was for the first time after a very long absence. I had not been
-back\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }to your place since that last heated clash between Saffia and myself
+place,{\ }it was for the first time after a very long absence. I had not been
+back{\ }to your place since that last heated clash between Saffia and myself
 that ended in~a bitter falling-out. I walked out banging the door behind me never to return. ~Some time passed since
 then. And \textit{that night} I was suddenly hit by the idea that Saffia might indeed carry out his plan
 \textit{imminently}. And I wanted to try once more to talk him out of it. Make another attempt using all my powers of
@@ -5410,7 +5357,7 @@ door leading to the staircase and opens it to go downstairs.
 37 \ 
 
 She finally appears at the end of the path. At long last! His body has grown stiff from standing
-tense\textcolor[rgb]{0.0,0.6901961,0.9411765}{\ }all this time looking out of the window. What's she holding in her
+tense{\ }all this time looking out of the window. What's she holding in her
 hands - a basket? What's stopping him from running up to her?\ \ He's afraid he'll trip over from being over-excited.\ 
 
 Aera walks in. {\textquotedbl}Glin?{\textquotedbl} She's looking for him.
@@ -5435,11 +5382,11 @@ like milk,{\textquotedbl} he mumbles.\
 {\textquotedbl}Some time ago I cut it because of you. Now I'm growing it again because of you.{\textquotedbl} 
 
 {\textquotedbl}Yamik'll soon be here,{\textquotedbl} Glin says and then steps back, throws
-out\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }his arms, flapping the baggy~sleeves and pinching the loose material on
+out{\ }his arms, flapping the baggy~sleeves and pinching the loose material on
 both sides, {\textquotedbl}How do I look in Yamik's shirt? Like a scarecrow? {\textquotedbl} 
 
 Aera laughs, {\textquotedbl}Come on, put on some fat.{\textquotedbl} She looks around. This room -\ \ like the rest of
-the building and in fact the whole neighborhood - is half\textcolor[rgb]{0.0,0.4392157,0.7529412}{{}-}built. Resting on
+the building and in fact the whole neighborhood - is half{{}-}built. Resting on
 a pair of trestles there's a rough wooden plank with two sets of Walkmans and earphones on it. 
 
 {\textquotedbl}Just a sec,{\textquotedbl} Glin gently pushes them aside and\ Aera takes out a red and white checkered
@@ -5468,15 +5415,15 @@ Yamik, unobserved, approaches noiselessly in his commando boots, stops~at the do
 with his close friend at the makeshift table.\ {\textquotedbl}Hello, good friends!{\textquotedbl} he greets them as he
 enters the room. ~
 
-They look up. {\textquotedbl}Hello to you,\textcolor{red}{\ }good\textcolor{red}{\ }friend!{\textquotedbl} They respond.
+They look up. {\textquotedbl}Hello to you,{\ }good{\ }friend!{\textquotedbl} They respond.
 
-He comes up to them, removes\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }his military cap, takes off the rucksack and
+He comes up to them, removes{\ }his military cap, takes off the rucksack and
 unbuttons his shirt. He then lays a friendly hand on Glin's shoulder while being careful not to touch Aera.
 
 {\textquotedbl}Go ahead and show Aera,{\textquotedbl} Glin prods Yamik.
 
 The short moment Yamik leans over towards Aera is sufficient for her to read the name engraved on the
-dog\textcolor[rgb]{0.0,0.4392157,0.7529412}{{}-}tag he's wearing, 'Saffia, Glin', beneath it some seven-eight digits. 
+dog{{}-}tag he's wearing, 'Saffia, Glin', beneath it some seven-eight digits. 
 
 Glin points to the rucksack, {\textquotedbl}Looks heavy -{\textquotedbl}~ 
 
@@ -5518,7 +5465,7 @@ Doing her best to please him Aera forces a few forkfuls into her mouth. {\textqu
 changes?{\textquotedbl}
 
 {\textquotedbl}None whatsoever!{\textquotedbl} Yamik is emphatic, and once again pleads with her, ``Eat up, drink up
--\textcolor{red}{\ }the more the better!{\textquotedbl} 
+-{\ }the more the better!{\textquotedbl} 
 
 Again she yields to his plea. Most of what she drinks spills down the front of her blouse till it's now one big wet
 stain. She clears a space on the plank in front of her, and then takes sheet of paper out from her basket and lays it
@@ -5529,14 +5476,14 @@ askance.
 
 Intercepting this mute back-and-forth between the two, Aera realizes that Glin knows nothing of Yamik's short nocturnal
 visit to the shack after she'd sent him word about\ Baby's birth. Yamik rushed uphill and into the\ shack\ \ drunk with
-joy. He wanted to eat\ Baby up. And he\textcolor{red}{\ }couldn't get enough of kissing her. ~Mother -- in her wisdom
+joy. He wanted to eat\ Baby up. And he{\ }couldn't get enough of kissing her. ~Mother -- in her wisdom
 -- had left the new parents to themselves for the short duration of his visit. Among the few words they managed to
 exchange, Yamik had confided in her the details of the TV operation. And then made\ her a request. Since her knowledge
 of the official language was far better than his,\ and since she was naturally far more familiar with the ideal of the
 return to \ Pale Blue Valley than Glin, he'd asked her to draft the declaration to be declaimed once they take over
 the\ inauguration of the new TV auditorium. He told her he would send her a message via the men specifying when and
 where to deliver it to him and Glin. She was delighted to be thus involved. As soon as Yamik left the shack she set to
-work on her assignment\textcolor{red}{. }
+work on her assignment{. }
 
 {\textquotedbl}Where will he sit?{\textquotedbl} she asks Yamik as though Glin isn't present. 
 
@@ -5555,7 +5502,7 @@ reading the declaration?{\textquotedbl}
 Aera stifles her anger at this pretense of naivet\'e and is careful not to reveal her worry. {\textquotedbl}How's he
 supposed to get out of there?{\textquotedbl} She asks.\ 
 
-{\textquotedbl}What's there to worry about?{\textquotedbl} Glin cuts in\textcolor[rgb]{0.0,0.4392157,0.7529412}{.}
+{\textquotedbl}What's there to worry about?{\textquotedbl} Glin cuts in{.}
 
 Aera looks right through him, {\textquotedbl}Won't you be apprehended?{\textquotedbl} 
 
@@ -5603,7 +5550,7 @@ asked her to baby-sit for her baby.{\textquotedbl}
 Hardly curbing his emotions Yamik asks: {\textquotedbl}Does he have a name yet?{\textquotedbl} 
 
 {\textquotedbl}Not yet,{\textquotedbl} Aera says. {\textquotedbl}They're waiting for his father to come home and help
-choose a name for him together. Meanwhile\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }they call him Baby. Capital
+choose a name for him together. Meanwhile{\ }they call him Baby. Capital
 B.{\textquotedbl}
 
 {\textquotedbl}Let's hope Baby's father comes home soon,{\textquotedbl} Yamik utters the words slowly and
@@ -5612,22 +5559,22 @@ the title of\ {}'Selected Recruit{}' and I mustn't endanger it by getting back l
 bus station later.{\textquotedbl} He turns to Glin and points at the rucksack, {\textquotedbl}Would you
 -{\textquotedbl}\ 
 
-Glin heaves the rucksack onto~his shoulder, takes hold of a shovel\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }propped up
+Glin heaves the rucksack onto~his shoulder, takes hold of a shovel{\ }propped up
 in the corner and goes out.
 
 Yamik and Aera are now alone together. He buttons his uniform. She collects the~dishes and the pieces of cutlery, folds
 the tablecloth, puts everything back in the basket. Only the sheet of paper remains on the rough wooden plank. 
 
-Outside dirt\textcolor{red}{\ }is being hacked and shoveled. 
+Outside dirt{\ }is being hacked and shoveled. 
 
 {\textquotedbl}He'll do anything for you,{\textquotedbl} Yamik says. {\textquotedbl}He's not a standup comedian
-with\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }only music in his head.{\textquotedbl} 
+with{\ }only music in his head.{\textquotedbl} 
 
 Aera says, {\textquotedbl}What's going to happen to him afterwards? On\ \textit{their} side he'll obviously be burnt out
 -{\textquotedbl} 
 
 {\textquotedbl}I'm thinking about it,{\textquotedbl} says Yamik. He wishes
-Aera~would\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }stop needling him on the subject.
+Aera~would{\ }stop needling him on the subject.
 
 Aera, afraid she may be too open about this worry of hers, tries to sound indifferent, {\textquotedbl}I'm sure you'll
 find a way.{\textquotedbl} She scrutinizes Yamik's face trying to guess what's going on inside his head.\ \ Plucking up
@@ -5636,14 +5583,14 @@ courage she asks bluntly, {\textquotedbl}Were you together with the men in the b
 Yamik gulped. {\textquotedbl}\ I{\dots}well, I was around there {}-{\textquotedbl}
 
 {\textquotedbl}So you did make contact with the men -{\textquotedbl} she wants to look at
-him\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }straight in his eyes but he averts them. {\textquotedbl}Why do I keep
+him{\ }straight in his eyes but he averts them. {\textquotedbl}Why do I keep
 asking you questions that I don't know whether you yourself believe in your answers.{\textquotedbl} 
 
 {\textquotedbl}Oh, Aera, it's too complicated,{\textquotedbl} Yamik sighs. {\textquotedbl}Were I to detached myself
 altogether, they'd forever be snooping after me. In that case I certainly wouldn't be able to act independently. I'll
 send you a message the first possible moment.{\textquotedbl} Resting his elbows on the now bare plank of wood he holds
 his head in his hands. {\textquotedbl}I'm tired, my love. I want to be home. With you. I want
-us\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }to choose a name for our baby\ \textit{together}.{\textquotedbl} 
+us{\ }to choose a name for our baby\ \textit{together}.{\textquotedbl} 
 
 Aera knows that this is the moment she should grant Yamik the warm hug he deserves, but she doesn't make a move.\ And
 now that Glin has just at this moment returned with the shovel\ and the empty rucksack, she's missed the moment she
@@ -5668,7 +5615,7 @@ drafted the declaration? Don't I deserve to see how it's going to be declaimed?{
 {\textquotedbl}Okay,{\textquotedbl} Yamik yields to her.\ 
 
 To clear some space the two\  men push away\ the three crates, the wooden plank and the
-trestles\textcolor[rgb]{0.0,0.4392157,0.7529412}{.} Yamik points with his hand, {\textquotedbl}Let's say that the stage
+trestles{.} Yamik points with his hand, {\textquotedbl}Let's say that the stage
 is over there. The dais is in the middle. The CEO and the MC and some VIP's sit behind it. The stand with the mike
 --\ this spade\ {}- ~is over here. The audience is over there. Glin sits in row 7 next to the aisle. The ceremony
 begins.{\textquotedbl} 
@@ -5685,7 +5632,7 @@ our communications system,{\textquotedbl} Yamik adds.
 Aera asks him, {\textquotedbl}Where will you actually be standing?{\textquotedbl} 
 
 {\textquotedbl}Behind the building,{\textquotedbl} Yamik says. {\textquotedbl}I'll be~the only one posted
-there.\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ \ }May we please go on?{\textquotedbl}\ \ 
+there.{\ \ }May we please go on?{\textquotedbl}\ \ 
 
 Aera nods graciously.
 
@@ -5693,7 +5640,7 @@ Aera nods graciously.
 with the earphones on, removing them from time to time.{\textquotedbl} 
 
 Glin, sitting on one of the crates, his Walkman in place, demonstrates Yamik's description of him. He explains,
-{\textquotedbl}This is so the\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }people around me get used to this weird
+{\textquotedbl}This is so the{\ }people around me get used to this weird
 character who can't do without his Walkman even during the ceremony. I'll also whisper something~to that effect to
 whoever is lucky enough to sit next to me.{\textquotedbl} 
 
@@ -5711,7 +5658,7 @@ Glin clears his throat three times.
 has elapsed since the beginning of the ceremony. I now count ten, nine, eight, seven, six, five, four, three, two, one,
 zero{\dots}{\textquotedbl} 
 
-Glin dashes to the makeshift stage and grabs the\textcolor{red}{\ }spade-cum-microphone. He takes a sheet of paper out
+Glin dashes to the makeshift stage and grabs the{\ }spade-cum-microphone. He takes a sheet of paper out
 of his pocket, flattens it and starts to read aloud, {\textquotedbl}Ladies and gentlemen, please permit me to present
 the{\dots} {\textquotedbl} 
 
@@ -5765,7 +5712,7 @@ see each other before the operation. On impulse they hug. Glin says, {\textquote
 -{\textquotedbl} he takes a picture postcard from his shirt pocket and~gives it Aera, hanging onto her hand for another
 precious second. {\textquotedbl}Guess what it is --{\textquotedbl} 
 
-Aera takes a swift look at\textcolor{red}{\ }the card, {\textquotedbl}I've no idea.{\textquotedbl} 
+Aera takes a swift look at{\ }the card, {\textquotedbl}I've no idea.{\textquotedbl} 
 
 {\textquotedbl}It's a photo of Pale Blue Valley.{\textquotedbl} 
 
@@ -5874,7 +5821,7 @@ One of the soldiers raises his hand, {\textquotedbl}Was it you?{\textquotedbl} \
 
 Ezlip says, {\textquotedbl}Close, but not quite --{\textquotedbl} 
 
-The\ recruits smile, some of them chuckle\textcolor[rgb]{0.0,0.4392157,0.7529412}{.}
+The\ recruits smile, some of them chuckle{.}
 
 ~Bonimi feels a bit embarrassed. {\textquotedbl}From this you may assume that I was a failure as a
 photographer,{\textquotedbl} he \ \ owns up pursing his lips. 
@@ -5891,7 +5838,7 @@ Ezlip relays the message to Janha in a whisper and replaces the receiver.
 {\textquotedbl}It seems that unfortunately I have to bring this most pleasant get-together to an
 end,{\textquotedbl}\ Bonimi addresses the 'Selected Recruits' in a personable tone of voice, {\textquotedbl}They're
 breathing down my neck. I hope you've been told that there are complimentary tickets for you for
-tomorrow's\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }ceremony inaugurating our renovated auditorium.'' 
+tomorrow's{\ }ceremony inaugurating our renovated auditorium.'' 
 
 Ezlip fills in, {\textquotedbl}You can get them at the information desk in the lobby. The receptionist will be glad to
 oblige.{\textquotedbl} 
@@ -5902,7 +5849,7 @@ The recruits smile and get up. One by one they file by the CEO and his aide to~s
 
 As he shakes hands with each recruit Bonimi\ reads\ the name affixed\ to his lapel\ out loud and exchanges a few words
 with him. His heart almost stops when the moment arrives. ``Selected Recruit Saffia, Glin -'' he reads out his nephew's
-name as he slowly, deliberately,\ shakes Yamik's large strong\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }hand, ``any
+name as he slowly, deliberately,\ shakes Yamik's large strong{\ }hand, ``any
 plans for after your service?{\textquotedbl} 
 
 Yamik answers, {\textquotedbl}I'd like to go into audio-engineering, sir.{\textquotedbl} 
@@ -5910,14 +5857,14 @@ Yamik answers, {\textquotedbl}I'd like to go into audio-engineering, sir.{\textq
 {\textquotedbl}You might\ join us here in this establishment,{\textquotedbl} Bonimi smiles. {\textquotedbl}Thank you,
 sir,{\textquotedbl} says Yamik and continues on his way to the door. 
 
-Bonimi\textcolor{red}{\ }stops\textcolor{red}{\ }him with a light touch on the arm, {\textquotedbl}We share a surname
+Bonimi{\ }stops{\ }him with a light touch on the arm, {\textquotedbl}We share a surname
 --{\textquotedbl} 
 
 {\textquotedbl}A common surname harbors both threat and hope,{\textquotedbl} Yamik responds lightly.
 
 Bonimi is intrigued by the fact that Glin isn't curious about their common surname. He studies his face intently,
 searching for some resemblance to Saffia, to Rimat, to branches of their families. He forces himself to find some. He
-says, {\textquotedbl}I'm sure your family\textcolor{red}{\ }is\ proud of you --{\textquotedbl} hoping that Glin will
+says, {\textquotedbl}I'm sure your family{\ }is\ proud of you --{\textquotedbl} hoping that Glin will
 come up with some details~about Rimat - where she lives, maybe she remarried, has more children. 
 
 {\textquotedbl}They are,{\textquotedbl} Yamik says. {\textquotedbl}Thank you, sir. Our tour of the TV building was\ most
@@ -5957,7 +5904,7 @@ we go back to our blessed routine.{\textquotedbl}
 
 The elderly guard points to the~small TV screen on Shisha's information desk, {\textquotedbl}The auditorium is starting
 to fill up{\dots} Oh, for God's sake!{\textquotedbl}\ A young woman is wheeling a~baby's carriage into~the lobby
-through the main entrance. He rushes\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }over to stop her. {\textquotedbl}Sorry,
+through the main entrance. He rushes{\ }over to stop her. {\textquotedbl}Sorry,
 ma'am, but babies aren't allowed in here now,{\textquotedbl} he says politely.
 
 Aera is flushed and sweating. {\textquotedbl}You must help me,{\textquotedbl} she almost orders the elderly guard.
@@ -5973,7 +5920,7 @@ earphones.{\textquotedbl}
 the distraught young woman a glass of water. In their short exchange he couldn't help noticing her slight Balad accent.
 Brushing suspicion aside he hastens to the auditorium to look for the baby's father.
 
-Shisha's eyes dart for a second to the woman with\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }the carriage and then
+Shisha's eyes dart for a second to the woman with{\ }the carriage and then
 return to the TV screen.
 
 Hardly a minute passes before Glin rushes out of the hall, frantic. What happened? Who could be asking for him? He
@@ -5982,12 +5929,12 @@ swiftly surveys the lobby. Aera! He rushes over to her. {\textquotedbl}Aera!{\te
 {\textquotedbl}You \textit{have} to get out!{\textquotedbl} Aera orders him in a whisper.
 {\textquotedbl}Run!{\textquotedbl} 
 
-Glin whispers back, alarmed\textcolor[rgb]{0.0,0.4392157,0.7529412}{,\ }{}``What are you doing here?!'' 
+Glin whispers back, alarmed{,\ }{}``What are you doing here?!'' 
 
 {\textquotedbl}They're going to kill you!{\textquotedbl}
 
 Meanwhile the elderly guard has returned to Shisha's desk. {\textquotedbl}Shhh{\dots}{\textquotedbl} she motions to Glin
-and Aera. She and the elderly guard exchange\textcolor[rgb]{0.0,0.4392157,0.7529412}{ u}neasy looks at the~family~tiff
+and Aera. She and the elderly guard exchange{ u}neasy looks at the~family~tiff
 they are privy to at the far end of the lobby.\textbf{\ }
 
 {\textquotedbl}You\textit{\ }must\textit{ not} go to the cave!{\textquotedbl} Aera whispers to Glin.
@@ -6011,7 +5958,7 @@ Aera points at the baby in the carriage, {\textquotedbl}This is our baby! Run! F
 
 He now recognizes his old cradle in this renovated baby carriage. He peers into it
 
-,\textcolor{red}{\ }glimpses a  small head with baby hair, a little\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }body
+,{\ }glimpses a  small head with baby hair, a little{\ }body
 swathed in a bed sheet printed with pale blue flowers. By sheer force he steps back.
 {\textquotedbl}Aera,{\textquotedbl} he says, a tremor in his voice, {\textquotedbl}I'm part of Yamik's plan. I cannot
 leave.{\textquotedbl} 
@@ -6092,7 +6039,7 @@ The screen that went dark for a minute now lights up. Glin is seen again, readin
 \textit{within half-hour} a clearly stated~assurance from an authoritative source that our demand will be met,
 \textit{these explosives will be detonated}. If anyone tries to lay a hand on me, detain me, harm me in any way,
 \textit{the explosives will be detonated}. Once we get this assurance, I shall leave the auditorium. Unless I am given
-complete free exit, unaccompanied and without\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }being followed, \textit{the
+complete free exit, unaccompanied and without{\ }being followed, \textit{the
 explosives will be detonated}. The half-hour countdown begins{\dots} Now!{\textquotedbl}
 
 Shisha, the security guard and the CEO stare at each other wide-eyed. In a trice their shock changes into a
@@ -6114,8 +6061,8 @@ Shisha's hands tremble as she does his bidding.
 
 The CEO's voice is heard over the system, {\textquotedbl}This is Bonimi Saffia, Public Television Network CEO. Ladies
 and gentlemen in the auditorium, please stay calm. The situation is under control. Official negotiations are about
-to\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }begin. I'd like to request that the
-half{}-hour\textcolor{red}{\ }countdown\textcolor{red}{\ }begins now. Is that confirmed?{\textquotedbl}
+to{\ }begin. I'd like to request that the
+half{}-hour{\ }countdown{\ }begins now. Is that confirmed?{\textquotedbl}
 
 Silence.
 
@@ -6126,8 +6073,8 @@ After another moment of\ silence Yamik's voice responds loud and clear, {\textqu
 granted.{\textquotedbl} 
 
 The CEO says {\textquotedbl}Thank you.{\textquotedbl} He turns off the mike. {\textquotedbl}This is a new voice,'' he
-tells Ezlip. ``This guy is\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }obviously the one in charge. Security must
-be\textcolor{red}{\ }locating him.{\textquotedbl} Bonimi turns the mike on. {\textquotedbl}I request that elderly
+tells Ezlip. ``This guy is{\ }obviously the one in charge. Security must
+be{\ }locating him.{\textquotedbl} Bonimi turns the mike on. {\textquotedbl}I request that elderly
 people, women and children be allowed to leave the auditorium -{\textquotedbl}
 
 Yamik's response is immediate, {\textquotedbl}Request denied.{\textquotedbl}
@@ -6147,10 +6094,10 @@ The CEO says, {\textquotedbl}I request that the half{}-hour countdown begins now
 Yamik's voice is heard immediately, {\textquotedbl}Request confirmed.{\textquotedbl}
 
 The CEO turns off the system, nods his head in the direction of the TV screen and then turns
-to\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }Ezlip, {\textquotedbl}For the life of me I'd never guess that that young
+to{\ }Ezlip, {\textquotedbl}For the life of me I'd never guess that that young
 fellow there on the stage is a Balad. He looks like one of us. Speaks like one of us too.{\textquotedbl}\ At the
 same\ time he wonders why that new voice coming over the sound system - with its mixture of accents - sounds so
-familiar. Whose\textcolor{red}{\ }could it be? When did he happen to hear it?
+familiar. Whose{\ }could it be? When did he happen to hear it?
 
 The phone on the information desk rings.\ \ Ezlip picks up the receiver and hands it to the CEO, {\textquotedbl}The
 Chief-of-Staff --{\textquotedbl}
@@ -6167,7 +6114,7 @@ once!''\
 
 {\textquotedbl}The men{\dots} are going{\dots} to kill Glin!{\textquotedbl} She{}'s panting.
 
-{\textquotedbl}What?\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }Are you crazy?{\textquotedbl} That's all he can
+{\textquotedbl}What?{\ }Are you crazy?{\textquotedbl} That's all he can
 say.\ \ How does she know? 
 
 Then, in a flash, the pieces fit together: the men had visited the shack and talked. She'd learned they were party to
@@ -6181,10 +6128,10 @@ his planned operation in the TV building and knew of Glin's involvement.
 
 Yamik hears her desperate words but they don't register. All he wants is that this hour, this day should be over, and
 that he and she and the baby will be together at last. But Glin's leanness, vulnerability and trust, pain him to the
-core\textcolor[rgb]{0.0,0.4392157,0.7529412}{.}
+core{.}
 
- {\textquotedbl}No,{\textquotedbl} he says\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }confidently,
-{\textquotedbl}no,\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }it won't happen, but -{\textquotedbl}\ 
+ {\textquotedbl}No,{\textquotedbl} he says{\ }confidently,
+{\textquotedbl}no,{\ }it won't happen, but -{\textquotedbl}\ 
 
 {\textquotedbl}But what?{\textquotedbl} Aera hisses. 
 
@@ -6194,7 +6141,7 @@ Now!{\textquotedbl}
 {\textquotedbl}Did you give them the green light?{\textquotedbl} Aera insists. {\textquotedbl}Yes or no?{\textquotedbl} 
 
 Yamik repeats once again, {\textquotedbl}It's too complicated.{\textquotedbl} He
-cannot\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }share with Aera what happened between himself and the men, can't tell
+cannot{\ }share with Aera what happened between himself and the men, can't tell
 her they had decided to do away with Glin after the operation. That was how he'd come up with the idea of the\ cave and
 convinced them of its practicality. \ At the time he'd reckoned on his reaching the cave before they did, and one way
 or another protect Glin. But how? For how long? He'd then~put~these questions aside for the moment. 
@@ -6207,12 +6154,12 @@ once!{\textquotedbl}~~~~~~~~~~~
 
 {\textquotedbl}Not before you promise me that you won't let them touch Glin!{\textquotedbl} 
 
-{\textquotedbl}Alright, alright! Just get away, Aera\textcolor[rgb]{0.0,0.4392157,0.7529412}{. T}he building is
+{\textquotedbl}Alright, alright! Just get away, Aera{. T}he building is
 booby-trapped -{\textquotedbl} 
 
-{\textquotedbl}So you \textit{did}\textcolor{red}{\ }plant those explosives?{\textquotedbl} 
+{\textquotedbl}So you \textit{did}{\ }plant those explosives?{\textquotedbl} 
 
-{\textquotedbl}\textcolor[rgb]{0.0,0.4392157,0.7529412}{I}t was\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }necessary.
+{\textquotedbl}{I}t was{\ }necessary.
 You mustn't be in the way. \textit{Just go}!{\textquotedbl}\ 
 
 ~{\textquotedbl}Baby's in there!{\textquotedbl} 
@@ -6223,7 +6170,7 @@ You mustn't be in the way. \textit{Just go}!{\textquotedbl}\
 
 {\textquotedbl}You brought him? Are you out of your mind?!{\textquotedbl} 
 
-{\textquotedbl}I couldn't leave him alone\textcolor[rgb]{0.0,0.4392157,0.7529412}{.\ } Mother was at
+{\textquotedbl}I couldn't leave him alone{.\ } Mother was at
 work.{\textquotedbl} 
 
 \textit{{\textquotedbl}Get him out of there! Now! Go!{\textquotedbl} }
@@ -6245,7 +6192,7 @@ outside.{\textquotedbl}
 Yamik's voice is heard over the system, {\textquotedbl}There's a baby carriage\ in the lobby with a baby inside. It
 should be wheeled out.{\textquotedbl}
 
-The CEO and Ezlip turn to look at the elderly security\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }guard who's pointing
+The CEO and Ezlip turn to look at the elderly security{\ }guard who's pointing
 at the baby carriage over in the lobby. The CEO's voice comes over: {\textquotedbl}What do we get in
 return?{\textquotedbl} 
 
@@ -6254,11 +6201,11 @@ return?{\textquotedbl}
 Ezlip gestures to the CEO to respond in the negative. Bonimi ignores him and asks over the system, {\textquotedbl}Does
 this time span extend beyond the limit?{\textquotedbl}
 
-{\textquotedbl}It does,{\textquotedbl} answers Yamik\textcolor[rgb]{0.0,0.4392157,0.7529412}{.}
+{\textquotedbl}It does,{\textquotedbl} answers Yamik{.}
 
 The CEO covers the mouthpiece and asks, {\textquotedbl}Who's baby is it?{\textquotedbl} \ 
 
-The elderly guard is all too ready to respond, {\textquotedbl}A young\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }woman
+The elderly guard is all too ready to respond, {\textquotedbl}A young{\ }woman
 wheeled\ him into the lobby a short time ago and insisted that I fetch his father from the auditorium right
 away.{\textquotedbl} 
 
@@ -6273,11 +6220,11 @@ activated.{\textquotedbl} Over the speakers he says, {\textquotedbl}We expect th
 -{\textquotedbl} 
 
 {\textquotedbl}It will be,{\textquotedbl} Yamik's voice is heard.\ {\textquotedbl}It will begin the moment the baby
-carriage reaches\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }the place designated.{\textquotedbl} 
+carriage reaches{\ }the place designated.{\textquotedbl} 
 
 The voice coming over intrigues Bonimi again and again. Its mixture of accents sounds\ so familiar.
 
-All eyes are fixed on the screen.\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }Bonimi, Ezlip and the elderly guard watch
+All eyes are fixed on the screen.{\ }Bonimi, Ezlip and the elderly guard watch
 the skinny Balad standing motionless on the podium, his fingers nervously tapping the microphone, his neck rubbing
 against the collar of his jacket as if its uncomfortable.
 
@@ -6287,7 +6234,7 @@ like you to know that he's highly impressed by your presence of mind,{\textquote
 {\textquotedbl}A vital piece of information,{\textquotedbl} Bonimi responds wryly. 
 
 Yamik's voice is heard, {\textquotedbl}The half-hour countdown
-begins{\dots}\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }NOW!{\textquotedbl}
+begins{\dots}{\ }NOW!{\textquotedbl}
 
 {\textquotedbl}Look!{\textquotedbl} The elderly guard cries out.
 
@@ -6302,12 +6249,12 @@ Bonimi stares open-mouthed at the woman making her way towards the stage, {\text
 Rimat{\dots}?{\textquotedbl}
 
 ~Glin's voice is heard over the system, {\textquotedbl}Mom, what the hell are you doing here?{\textquotedbl} Then
-he\textcolor[rgb]{0.0,0.4392157,0.7529412}{{}'}s seen stepping down from the podium and tripping over. Strange crackles
+he{{}'}s seen stepping down from the podium and tripping over. Strange crackles
 are emitted from the TV set.
 
 Ezlip understands. {\textquotedbl}The bloody fool got entangled in wires! It's going to {\dots}''
 
-{\textquotedbl}Glin!{\textquotedbl} Yamik's voice booms\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }out,
+{\textquotedbl}Glin!{\textquotedbl} Yamik's voice booms{\ }out,
 {\textquotedbl}Glin!!!{\textquotedbl}
 
 Yamik's cry is lost in the resounding blast that rocks the building.
@@ -6318,12 +6265,12 @@ Yamik's cry is lost in the resounding blast that rocks the building.
 43\ 
 
 Mother is weeding the flower\ bed. Footsteps are heard coming up the hill, getting closer. She hopes against hope that
-it's Gidal and\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }no one else. It is! She straightens up and waves. 
+it's Gidal and{\ }no one else. It is! She straightens up and waves. 
 
 He waves back. {\textquotedbl}It's him!{\textquotedbl} he calls out. 
 
 Mother's hands tremble. She waits until Gidal~closes the distance~between them and only then
-asks,\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }{\textquotedbl}Are you sure?{\textquotedbl} 
+asks,{\ }{\textquotedbl}Are you sure?{\textquotedbl} 
 
 {\textquotedbl}Yes!{\textquotedbl} Gidal almost jumps for joy. {\textquotedbl}Absolutely sure!{\textquotedbl} 
 
@@ -6336,10 +6283,10 @@ which mounted it on.{\textquotedbl}
 Needless to say he doesn't breathe a word about having recognized the cradle the moment he saw it in the shack. Cradles
 do look alike, but there was no doubt about this one being baby Glin's old cradle. Hadn't he replaced the worn handles
 with new ones at the time? How happy Rimat and Saffia had been with his handiwork. They couldn't thank him
-enough\textcolor[rgb]{0.0,0.4392157,0.7529412}{.\ }And it was in that very cradle that Rimat had
-brought\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }Glin to the village that night when she came looking for him. And
+enough{.\ }And it was in that very cradle that Rimat had
+brought{\ }Glin to the village that night when she came looking for him. And
 later on, when Glin outgrew it, she'd turned it into her sewing basket. Hadn't he seen it whenever he stopped
-by\textcolor{red}{\ }at\textcolor{red}{\ }her place? Aera said she'd picked it up at the flea market. But he has
+by{\ }at{\ }her place? Aera said she'd picked it up at the flea market. But he has
 another idea about how it found its way into her hands. About that too, of course,~he keeps silent.~~
 
 {\textquotedbl}And{\dots} \textit{the little one}?{\textquotedbl} Mother tries to~steady her voice.{\textquotedbl} Did
@@ -6365,7 +6312,7 @@ nurse said yes. There were four babies there and a couple of nurses. And one of 
 }baby in her arms. I was sure it was him because I recognized the bed sheet he was covered with. It was printed with
 pale blue flowers. I looked at him and could easily see that he'd filled out and he was smiling. {\textquotedbl} 
 
-Mother, still hovering between belief and disbelief, again\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }echoes
+Mother, still hovering between belief and disbelief, again{\ }echoes
 ``\textit{He's filled out and he was smiling}.'' 
 
 {\textquotedbl}Yes,{\textquotedbl} Gidal beams delighted to be the bearer of such good tidings. 
@@ -6374,7 +6321,7 @@ Mother, still hovering between belief and disbelief, again\textcolor[rgb]{0.0,0.
 
 {\textquotedbl}No one -{\textquotedbl} 
 
-Suspicious\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }Mother doesn't trust him. How can he be so sure? Maybe people
+Suspicious{\ }Mother doesn't trust him. How can he be so sure? Maybe people
 \textit{on their side} associate Baby with what happened. Maybe they're waiting for someone to ask about him, show an
 interest. She stops right there. She mustn't share her anxieties with this\ good{}-hearted man. 
 
@@ -6400,7 +6347,7 @@ doing?{\textquotedbl}
 
 {\textquotedbl}She's still in hospital.{\textquotedbl} 
 
-Mother is fearful. \ She asks, {\textquotedbl}Does she claim\textcolor{red}{\ }that the baby is hers?{\textquotedbl} 
+Mother is fearful. \ She asks, {\textquotedbl}Does she claim{\ }that the baby is hers?{\textquotedbl} 
 
 {\textquotedbl}No. In the papers they said that she's single, that she never married, that she never had
 children.{\textquotedbl} 
@@ -6506,7 +6453,7 @@ Meantime the sun has sunk below the horizon.
 
 Gidal feels good about the darkness enveloping the two of them. {\textquotedbl}I had one night of happiness in my
 life,{\textquotedbl} he says. {\textquotedbl}That woman that I loved had once spent a night at my place and she nursed
-her baby.\ \ And the\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }one day\textit{\ }of happiness in my life was the day I
+her baby.\ \ And the{\ }one day\textit{\ }of happiness in my life was the day I
 came here and Aera nursed Baby.{\textquotedbl} 
 
 Mother says, {\textquotedbl}I had many days of happiness and many nights of happiness, but they're all gone for me
@@ -6514,7 +6461,7 @@ forever. Like they're gone for you forever. The main part of our lives is gone f
 lives. My debt to you knows no bounds. You found Baby for me.{\textquotedbl} 
 
 {\textquotedbl}It's you who found him,{\textquotedbl} Gidal wishes to correct her. {\textquotedbl}You told me to read
-all the newspapers carefully, watch television day in day out. Listen to the radio\textcolor{red}{\ }day in day
+all the newspapers carefully, watch television day in day out. Listen to the radio{\ }day in day
 out.{\textquotedbl}
 
 ~
@@ -6536,12 +6483,12 @@ She's not up to anything.
 
 The hairdresser lets a lock of hair fall delicately on Shisha's forehead. The young woman is impassive. The hairdresser
 moves the lock of hair a bit to the side to conceal the temple. The young woman is
-impassive.\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }{\textquotedbl}In the papers it says you should be awarded the
+impassive.{\ }{\textquotedbl}In the papers it says you should be awarded the
 medal of courage -{\textquotedbl} the hairdresser chatters away. 
 
-{\textquotedbl}I wish they'd just let me be,{\textquotedbl} says Shisha\textcolor[rgb]{0.0,0.4392157,0.7529412}{.}
+{\textquotedbl}I wish they'd just let me be,{\textquotedbl} says Shisha{.}
 
-While the hairdresser sprays\ the fresh hairdo Shisha doesn't protect\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }her
+While the hairdresser sprays\ the fresh hairdo Shisha doesn't protect{\ }her
 eyes. The hairdresser does that for her. She then removes the smock from Shisha's shoulders and then touches up the new
 curls with her fingertips. {\textquotedbl}You are a beauty,{\textquotedbl} she surveys her fondly. Shisha is silent.
 She asks, {\textquotedbl}Everyone wants to know\ when you'll~go to see the baby - {\textquotedbl} 
@@ -6594,7 +6541,7 @@ They had to put a traffic cop in the corridor. People who were toddlers in kinde
 school, whoever knew you\ from wherever. Not to speak of VIP's, big brass, celebs. What color nail-polish would you
 like? {\textquotedbl} 
 
-{\textquotedbl}I'd\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }prefer none,{\textquotedbl} Shisha says,
+{\textquotedbl}I'd{\ }prefer none,{\textquotedbl} Shisha says,
 {\textquotedbl}but for the psychiatrist's sake let's opt for red. She keeps telling me that the best thing for me is to
 return to my normal life as soon as possible... As if I know what that was -{\textquotedbl} ~
 
@@ -6660,7 +6607,7 @@ The hairdresser kisses Shisha affectionately on both cheeks before leaving.
 Shisha wants to return to her bed, but Doctor Nam lays his hands lightly on \ \ \ her shoulders. {\textquotedbl}Why not
 stay sitting up a little longer, Shisha. Lying in bed all the time isn't so advisable.{\textquotedbl}\ \ Pushing the
 small folding table aside he sits down on the hairdresser's chair. {\textquotedbl}All your papers are
-ready.\textcolor{red}{~} Matron will come in an hour to accompany you outside. Somebody from the Ministry of Defense
+ready.{~} Matron will come in an hour to accompany you outside. Somebody from the Ministry of Defense
 Rehabilitation Department will drive you home. She'll go inside with you to check that all is in order there and make
 arrangements for anything that you still feel necessary. You indeed look very well. And please come for a checkup in a
 month's time.  But should any question arise earlier, any problem, even the smallest - don't hesitate to come earlier
@@ -6676,7 +6623,7 @@ Doctor Nam smiles, {\textquotedbl}What's on your mind?{\textquotedbl}
 {\textquotedbl}Those nightmares. Are they going to stay? Will they ever go away?{\textquotedbl} 
 
 Doctor Nam says, {\textquotedbl}The best thing -- as the psychiatrist has suggested -- is to wake up completely. Get out
-of bed. Take a sip of something,\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }whatever you like, maybe watch some
+of bed. Take a sip of something,{\ }whatever you like, maybe watch some
 television. In time they{}'ll go away.{\textquotedbl}
 
 {\textquotedbl}Doctor Nam, I feel the handle of the carriage in my hands. But why on earth am I holding on to
@@ -6730,7 +6677,7 @@ was not returned because somebody at his base had taken a fancy to it.
 Leaving Glin's room, he picks up Rimat's suitcase and places it on her bed in the adjoining one. Taking care of Rimat's
 clothes and belongings is far more difficult for him. He braces himself, functions like a robot. Handling
 her\ embroidery he finds the needle pinned into an almost completed flower. It feels like~touching Rimat's hand. He is
-on the verge of tears\textcolor[rgb]{0.0,0.4392157,0.7529412}{.}\ \ If Dela could embroider, he believes, she might
+on the verge of tears{.}\ \ If Dela could embroider, he believes, she might
 have wished to continue where Rimat left off. After a moment of contemplation\ he puts the skein
 of\ embroidery\ \ threads\ together with the thimble and scissors in the middle of the fabric, rolls it up and lays it
 inside the suitcase. He then takes the two packed suitcases and puts them back under the stairs. The lady who runs
@@ -6738,7 +6685,7 @@ inside the suitcase. He then takes the two packed suitcases and puts them back u
 possible. 
 
 Returning to Rimat's room he takes a long look at Saffia's violin case lying on the top shelf of the bookcase. Not for
-all\textcolor[rgb]{0.0,0.4392157,0.7529412}{\ }the whole world will he ever let it out of his hands. He reaches up and
+all{\ }the whole world will he ever let it out of his hands. He reaches up and
 pats the case. The cover sheds a handful of flakes at his touch as though in live response. Upstairs he has a ceramic
 container in which he deposits these flakes. He cannot just throw them away.
 
@@ -6916,7 +6863,7 @@ visibly moved by Dela's courage to ask this question.
 There's a knock at the door. 
 
 {}``That must be Hand to Hand.{\textquotedbl} Zakod says. He lays Baby inside the\ carriage\  and opens the door. He
-guessed wrong. A middle-aged\textcolor{red}{\ }woman\  clad in black stands outside. {\textquotedbl}Good morning,
+guessed wrong. A middle-aged{\ }woman\  clad in black stands outside. {\textquotedbl}Good morning,
 madam,{\textquotedbl} he says wondering whether she might be a Balad.
 
 {\textquotedbl}Good morning, sir,{\textquotedbl} says Mother. 
@@ -6999,6 +6946,4 @@ Earlier, as she'd approached the house, pale blue flowers were fluttering there 
 
 Welcoming her.
 
-
-\bigskip
 \end{document}
