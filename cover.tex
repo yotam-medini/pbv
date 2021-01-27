@@ -22,29 +22,36 @@
 \begin{document}
 \begin{bookcover}
 
-\bookcovercomponent{color}{bg whole}{color=paleblue}
+\bookcovercomponent{color}{bg whole}{color=darkblue}
 
 % Text on the front cover
 \bookcovercomponent{normal}{front}{
     \centering
-    \vspace{60mm}
-    \color{black}
+    \vspace{.1\partheight}
+    \color{white}
     {\sffamily\bfseries \resizebox*{50mm}{8mm}{Yael Medini}}
-    \par\vspace{20mm}
+    \par\vspace{.04\partheight}
     %\resizebox*{90mm}{40mm}{\parbox{35mm}{\centering Pale Blue Valley}}
     % {\bfseries\fontsize{40}{44}\selectfont  Pale Blue Valley}
     \resizebox*{100mm}{14mm}{\bfseries Pale Blue Valley}
 }
 
+\bookcovercomponent{normal}{front}{
+  \vspace{.25\partheight}
+  \begin{center}
+    \includegraphics[width=.75\partwidth]{pbv-illus-v00.png}
+  \end{center}
+}
+  
 % Text on the spine
 \bookcovercomponent{center rotate}{spine}{%
-    \color{black}\huge\sffamily\bfseries%
+    \color{white}\huge\sffamily\bfseries%
     Yael Medini \hspace{1in} \Huge Pale Blue Valley}
 
 \bookcovercomponent{normal}{back}{
     \vspace{0.6in}
     \centering
-    \parbox{.8\textwidth}{\color{darkerblue}
+    \parbox{.8\textwidth}{\color{white}
 \normalsize
 \setlength{\parskip}{4pt}
 
@@ -76,6 +83,9 @@ is unsure of. Each one of the men believes the baby to be his.
 Pale Blue Valley is a story of love, friendship, idealism, acts of
 terror, periods of political calm, fluctuations between hope and despair.
 
+\begin{center}
+  \textsf{Cover illustration by} \textit{Amalia Medini}
+\end{center}
     }
 
 }
