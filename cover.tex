@@ -7,7 +7,10 @@
   12pt
 ]{bookcover}
 
-\usepackage{lipsum}
+% \usepackage{lmodern}
+% \usepackage{gfsdidot}
+% \usepackage[T1]{fontenc}
+\usepackage{kpfonts}
 
 \newbookcovercomponenttype{center rotate}{
     \parbox[t][\partheight][c]{\partwidth}{
@@ -29,7 +32,9 @@
     \centering
     \vspace{.1\partheight}
     \color{white}
-    {\bfseries \resizebox*{50mm}{8mm}{Yael Medini}}
+  % {\fontfamily{cmr}\selectfont
+    {\resizebox*{60mm}{8mm}{\textsc{Yael Medini}}}
+  % }
     \par\vspace{.04\partheight}
     %\resizebox*{90mm}{40mm}{\parbox{35mm}{\centering Pale Blue Valley}}
     % {\bfseries\fontsize{40}{44}\selectfont  Pale Blue Valley}
@@ -45,15 +50,17 @@
   
 % Text on the spine
 \bookcovercomponent{center rotate}{spine}{%
-    \color{white}\huge\sffamily\bfseries%
-    Yael Medini \hspace{1in} \Huge Pale Blue Valley}
+    \color{white}\huge\bfseries%
+    \textsc{Yael Medini} \hspace{1in} \Huge Pale Blue Valley}
 
 \bookcovercomponent{normal}{back}{
     \vspace{0.6in}
     \centering
-    \parbox{.82\textwidth}{\color{white}
+    \parbox{.87\textwidth}{\color{white}
 \normalsize
 \setlength{\parskip}{4pt}
+
+% \fontfamily{gfsdidot}\selectfont
 
 \emph{Pale Blue Valley} is the story of a love-triangle in an unnamed
 country. The plot unfolds against a background of political unrest
@@ -68,7 +75,7 @@ prevailing dominant entity, is totally immersed in the world of
 music. A clandestine love affair blossoms between him and Aera.
 
 Glin and Yamik happen to make each other's acquaintance, neither
-having an inkling of Aera's connection with the other.
+\hbox{having} an inkling of Aera's connection with the other.
 
 Aera is torn between the two. Her inner struggle is intensified when
 the men's acquaintanceship turns into a warm friendship.
@@ -83,10 +90,7 @@ ambiguous. Each one of the men believes the baby to be his.
 \emph{Pale Blue Valley} is a story of love, friendship, idealism, acts of
 terror, periods of political calm, hope and despair.
 
- 
-\begin{center}
-  \textit{Cover illustration: Amalia Medini}
-\end{center}
+\textit{Cover illustration: Amalia Medini}
     }
 
 }
